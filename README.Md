@@ -259,4 +259,4 @@ r/learnpython and r/Python
 Local PyCon events and meetups
 
 
-
+Source: [this article on medium](https://python.plainenglish.io/the-python-skills-that-actually-get-you-hired-in-2026-and-how-to-learn-them-0f0fc4eaf5e0)
