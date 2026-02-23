@@ -257,3 +257,6 @@ Advent of Code for yearly coding challenges
 Python Discord (discord.gg/python)
 r/learnpython and r/Python
 Local PyCon events and meetups
+
+
+

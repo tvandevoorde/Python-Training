@@ -1,36 +1,36 @@
-# 10.000-uur AI/LLM Engineer Training Plan
+# 10,000-hour AI/LLM Engineer Training Plan
 
-**TL;DR**: Een 5-niveau curriculum (2-3 jaar, 20-30 uur/week) dat volledige beginners voorbereidt op production-grade AI/LLM engineering. Bouwt progressief: Python fundamentals → Wiskunde & Data Science → Machine Learning → Deep Learning → LLM Specialization (training + production). Elk niveau culmineert in capstone projects. Balans: 35% theorie, 65% hands-on code. Tech stack: Python + PyTorch + Hugging Face. Geschikt voor self-paced en groepsleren.
+**TL;DR**: A 5-level curriculum (2-3 years, 20-30 hours/week) that prepares complete beginners for production-grade AI/LLM engineering. Builds progressively: Python fundamentals → Mathematics & Data Science → Machine Learning → Deep Learning → LLM Specialization (training + production). Each level culminates in capstone projects. Balance: 35% theory, 65% hands-on code. Tech stack: Python + PyTorch + Hugging Face. Suitable for self-paced and group learning.
 
 ---
 
-## NIVEAU-STRUCTUUR (5 niveaus)
+## LEVEL STRUCTURE (5 Levels)
 
-| Niveau | Uren | Weken (20h/wk) | Focus | Technologie |
+| Level | Hours | Weeks (20h/wk) | Focus | Technology |
 |--------|------|----------------|-------|-------------|
-| **1: Foundations** | 2.000 | 100 | Python, Wiskunde, Basale Data Science | Python, NumPy, Pandas, Matplotlib |
+| **1: Foundations** | 2.000 | 100 | Python, Mathematics, Basic Data Science | Python, NumPy, Pandas, Matplotlib |
 | **2: Machine Learning** | 2.000 | 100 | ML Algorithms, Evaluation, Feature Engineering | scikit-learn, Jupyter |
 | **3: Deep Learning Basics** | 2.000 | 100 | Neural Networks, CNN, RNN, Transformers Intro | PyTorch, TensorFlow |
 | **4: Advanced DL & LLMs** | 2.000 | 100 | LLM Architectures, Fine-tuning, Production Ops | Hugging Face, LoRA, vLLM |
 | **5: LLM Specialization** | 2.000 | 100 | Advanced LLMOps, Agents, RAG, Custom Systems | LangChain, MLflow, Docker |
 
-**Totaal**: ~500 weken = ~9,6 jaar @ 20 uur/week (of 12 weken @ 166 uur/week intensief bootcamp-style)
+**Total**: ~500 weeks = ~9.6 years @ 20 hours/week (or 12 weeks @ 166 hours/week intensive bootcamp-style)
 
 ---
 
-## NIVEAU 1: FOUNDATIONS (2.000 uur)
+## LEVEL 1: FOUNDATIONS (2.000 hours)
 
-**Doel**: Leerlingen kunnen self-contained Python scripts schrijven, basiswiskunde begrijpen, data manipuleren in DataFrames.
+**Goal**: Learners can write self-contained Python scripts, understand basic mathematics, and manipulate data in DataFrames.
 
-**Onderverdeling** (2.000 uur):
-- Python Programmeren: 700 uur
-- Wiskunde Fundamentals: 500 uur
-- Data Science Tools: 600 uur
-- Projects & Practicum: 200 uur
+**Breakdown** (2.000 hours):
+- Python Programming: 700 hours
+- Mathematics Fundamentals: 500 hours
+- Data Science Tools: 600 hours
+- Projects & Practicum: 200 hours
 
-### 1.1 Python Programming (700 uur)
+### 1.1 Python Programming (700 hours)
 
-| Topic | Uren | Resources | Deliverables |
+| Topic | Hours | Resources | Deliverables |
 |-------|------|-----------|---|
 | Variables, types, operators | 80 | Python Official Docs, Codecademy | 5 small scripts |
 | Control flow (if/for/while) | 100 | Interactive coding exercises (Exercism, HackerRank) | Algorithms practice |
@@ -52,9 +52,9 @@
 
 ---
 
-### 1.2 Wiskunde Fundamentals (500 uur)
+### 1.2 Mathematics Fundamentals (500 hours)
 
-| Topic | Uren | Source | Practicum |
+| Topic | Hours | Source | Practice |
 |-------|------|--------|----------|
 | **Linear Algebra** | 200 | Khan Academy (Linear Algebra, 14 units) + 3Blue1Brown videos | Numpy matrix operations |
 | - Vectors, matrices, operations | 60 | Interactive | Build vector library |
@@ -80,9 +80,9 @@
 
 ---
 
-### 1.3 Data Science Tools (600 uur)
+### 1.3 Data Science Tools (600 hours)
 
-| Topic | Uren | What You'll Build |
+| Topic | Hours | What You'll Build |
 |-------|------|-------------------|
 | **NumPy mastery** | 150 | - Array operations library<br>- Matrix multiplication engine<br>- Statistical functions |
 | - Array creation and manipulation | 50 | Efficient data operations |
@@ -112,7 +112,7 @@
 
 ---
 
-### 1.4 Projects & Integration (200 uur)
+### 1.4 Projects & Integration (200 hours)
 
 - **Project 1 (100h)**: Build an **end-to-end data pipeline**
   - Scrape/download data from API or public source
@@ -130,23 +130,23 @@
 
 ---
 
-**Milestone After Niveau 1**: Leerlingen kunnen Python scripts schrijven, data manipuleren, visualizaties maken, statistische analyse doen.
+**Milestone After LEVEL 1**: Learners can write Python scripts, manipulate data, create visualizations, and perform statistical analysis.
 
 ---
 
-## NIVEAU 2: MACHINE LEARNING (2.000 uur)
+## LEVEL 2: MACHINE LEARNING (2.000 hours)
 
-**Doel**: Leerlingen kunnen ML algoritmes implementeren, modelo evalueren, productie-ready pipelines bouwen.
+**Goal**: Learners can implement ML algorithms, evaluate models, and build production-ready pipelines.
 
-**Onderverdeling** (2.000 uur):
-- ML Fundamentals & Algorithms: 800 uur
-- Practical ML Engineering: 600 uur
-- Advanced Topics: 400 uur
-- Capstone Projects: 200 uur
+**Breakdown** (2.000 hours):
+- ML Fundamentals & Algorithms: 800 hours
+- Practical ML Engineering: 600 hours
+- Advanced Topics: 400 hours
+- Capstone Projects: 200 hours
 
-### 2.1 ML Fundamentals & Algorithms (800 uur)
+### 2.1 ML Fundamentals & Algorithms (800 hours)
 
-| Topic | Uren | Practicum |
+| Topic | Hours | Practicum |
 |-------|------|----------|
 | **ML Concepts** | 200 | |
 | - Problem framing & metrics | 50 | House price prediction |
@@ -183,9 +183,9 @@
 
 ---
 
-### 2.2 Practical ML Engineering (600 uur)
+### 2.2 Practical ML Engineering (600 hours)
 
-| Topic | Uren | Tools | Output |
+| Topic | Hours | Tools | Output |
 |-------|------|-------|--------|
 | **Data Pipelines & Preprocessing** | 150 | scikit-learn Pipelines | Reproducible preprocessing |
 | - Data cleaning at scale | 60 | Pandas, missing value strategies | Robust pipelines |
@@ -216,9 +216,9 @@
 
 ---
 
-### 2.3 Advanced ML Topics (400 uur)
+### 2.3 Advanced ML Topics (400 hours)
 
-| Topic | Uren | Advanced Concept |
+| Topic | Hours | Advanced Concept |
 |-------|------|-------------------|
 | **Imbalanced Datasets** | 100 | SMOTE, class weights, sampling strategies |
 | **Ensemble Methods Deep Dive** | 100 | Stacking, blending, voting classifiers |
@@ -227,7 +227,7 @@
 
 ---
 
-### 2.4 Capstone Projects (200 uur)
+### 2.4 Capstone Projects (200 hours)
 
 - **Project 1 (100h)**: **Kaggle Competition**
   - Compete in active Kaggle competition
@@ -243,23 +243,23 @@
 
 ---
 
-**Milestone After Niveau 2**: Leerlingen kunnen complete ML pipelines bouwen, tunen, evalueren, en produceren.
+**Milestone After LEVEL 2**: Learners can build, tune, evaluate, and ship complete ML pipelines.
 
 ---
 
-## NIVEAU 3: DEEP LEARNING BASICS (2.000 uur)
+## LEVEL 3: DEEP LEARNING BASICS (2.000 hours)
 
-**Doel**: Leerlingen begrijpen neural networks diep, kunnen transformers gebruiken, hebben basis kennis van LLM architectuur.
+**Goal**: Learners understand neural networks deeply, can use transformers, and have basic knowledge of LLM architecture.
 
-**Onderverdeling**:
-- Neural Networks Fundamentals: 600 uur
-- Convolutional & Recurrent Networks: 500 uur
-- Transformers & Attention: 500 uur
-- Projects: 400 uur
+**Breakdown**:
+- Neural Networks Fundamentals: 600 hours
+- Convolutional & Recurrent Networks: 500 hours
+- Transformers & Attention: 500 hours
+- Projects: 400 hours
 
-### 3.1 Neural Networks Fundamentals (600 uur)
+### 3.1 Neural Networks Fundamentals (600 hours)
 
-| Topic | Uren | Framework | Project |
+| Topic | Hours | Framework | Project |
 |-------|------|-----------|---------|
 | **From Linear to Neural** | 100 | PyTorch | |
 | - Perceptron to MLP | 50 | Implement from scratch | Classification on MNIST |
@@ -291,9 +291,9 @@
 
 ---
 
-### 3.2 Convolutional & Recurrent Networks (500 uur)
+### 3.2 Convolutional & Recurrent Networks (500 hours)
 
-| Topic | Uren | Application |
+| Topic | Hours | Application |
 |-------|------|-------------|
 | **Convolutional Neural Networks (CNNs)** | 250 | |
 | - Convolution operation (intuition + math) | 50 | Implement Conv2d from scratch |
@@ -319,9 +319,9 @@
 
 ---
 
-### 3.3 Transformers & Attention Mechanism (500 uur)
+### 3.3 Transformers & Attention Mechanism (500 hours)
 
-| Topic | Uren | Depth |
+| Topic | Hours | Depth |
 |-------|------|-------|
 | **Attention is All You Need** | 150 | |
 | - Self-attention mechanism | 60 | Implementation & intuition |
@@ -348,7 +348,7 @@
 
 ---
 
-### 3.4 Deep Learning Projects (400 uur)
+### 3.4 Deep Learning Projects (400 hours)
 
 - **Project 1 (150h)**: **End-to-End Vision Project**
   - Custom image dataset collection
@@ -371,23 +371,23 @@
 
 ---
 
-**Milestone After Niveau 3**: Leerlingen begrijpen neural networks diep, kunnen transformers gebruiken, klaar voor LLM training.
+**Milestone After LEVEL 3**: Learners understand neural networks deeply, can use transformers, and are ready for LLM training.
 
 ---
 
-## NIVEAU 4: ADVANCED DL & LLMs (2.000 uur)
+## LEVEL 4: ADVANCED DL & LLMs (2.000 hours)
 
-**Doel**: Leerlingen kunnen LLMs fine-tunen, begrijpen production considerations, optimaliseren voor inferentie.
+**Goal**: Learners can fine-tune LLMs, understand production considerations, and optimize for inference.
 
-**Onderverdeling**:
-- LLM Architecture & Theory: 600 uur
-- Fine-tuning Methodologies: 600 uur
-- Production LLM Systems: 500 uur
-- Projects: 300 uur
+**Breakdown**:
+- LLM Architecture & Theory: 600 hours
+- Fine-tuning Methodologies: 600 hours
+- Production LLM Systems: 500 hours
+- Projects: 300 hours
 
-### 4.1 LLM Architecture & Theory (600 uur)
+### 4.1 LLM Architecture & Theory (600 hours)
 
-| Topic | Uren | Deep Dive |
+| Topic | Hours | Deep Dive |
 |-------|------|----------|
 | **Transformer Internals** | 200 | |
 | - Detailed attention math | 60 | Implement multi-head attention in PyTorch |
@@ -415,9 +415,9 @@
 
 ---
 
-### 4.2 Fine-tuning Methodologies (600 uur)
+### 4.2 Fine-tuning Methodologies (600 hours)
 
-| Topic | Uren | Technique | When to Use |
+| Topic | Hours | Technique | When to Use |
 |-------|------|-----------|-------------|
 | **Full Model Fine-tuning** | 150 | Update all weights | Unlimited compute |
 | - End-to-end training | 60 | Full backprop | Custom domains |
@@ -449,9 +449,9 @@
 
 ---
 
-### 4.3 Production LLM Systems (500 uur)
+### 4.3 Production LLM Systems (500 hours)
 
-| Topic | Uren | Component | Tools |
+| Topic | Hours | Component | Tools |
 |-------|------|-----------|-------|
 | **Inference Optimization** | 200 | Speed up inference | |
 | - KV-cache optimization | 50 | Reuse computed values | 10x speedup |
@@ -478,7 +478,7 @@
 
 ---
 
-### 4.4 Advanced DL & LLM Projects (300 uur)
+### 4.4 Advanced DL & LLM Projects (300 hours)
 
 - **Project 1 (150h)**: **Full LLM Fine-tuning Pipeline**
   - Data collection & preparation
@@ -496,23 +496,23 @@
 
 ---
 
-**Milestone After Niveau 4**: Leerlingen kunnen LLMs in production draaien, fine-tunen, optimaliseren.
+**Milestone After LEVEL 4**: Learners can run LLMs in production, fine-tune them, and optimize them.
 
 ---
 
-## NIVEAU 5: LLM SPECIALIZATION (2.000 uur)
+## LEVEL 5: LLM SPECIALIZATION (2.000 hours)
 
-**Doel**: Leerlingen worden LLM engineers die systems ontwerpen, agents bouwen, research volgen, bedrijfswaarde creëren.
+**Goal**: Learners become LLM engineers who design systems, build agents, follow research, and create business value.
 
-**Onderverdeling**:
-- Advanced LLMOps & Production Systems: 600 uur
-- Agents & Agentic AI: 500 uur
-- Advanced RAG & Knowledge Systems: 400 uur
-- Capstone & Specialization: 500 uur
+**Breakdown**:
+- Advanced LLMOps & Production Systems: 600 hours
+- Agents & Agentic AI: 500 hours
+- Advanced RAG & Knowledge Systems: 400 hours
+- Capstone & Specialization: 500 hours
 
-### 5.1 Advanced LLMOps & Production Systems (600 uur)
+### 5.1 Advanced LLMOps & Production Systems (600 hours)
 
-| Topic | Uren | Enterprise Skill |
+| Topic | Hours | Enterprise Skill |
 |-------|------|-----------------|
 | **Model Management** | 200 | |
 | - Model versioning & MLflow | 60 | Track experiments & models |
@@ -531,9 +531,9 @@
 | - Token economics | 25 | Per-model cost analysis |
 | - Throughput optimization | 25 | Cost per output token |
 
-### 5.2 Agents & Agentic AI (500 uur)
+### 5.2 Agents & Agentic AI (500 hours)
 
-| Topic | Uren | Framework | Skill |
+| Topic | Hours | Framework | Skill |
 |-------|------|-----------|-------|
 | **Agent Foundations** | 150 | | |
 | - Agent loops & decision making | 50 | Plan → Execute → Observe | Agentic reasoning |
@@ -557,9 +557,9 @@
 - Solve complex multi-step problems
 - Evaluate agent collaboration quality
 
-### 5.3 Advanced RAG & Knowledge Systems (400 uur)
+### 5.3 Advanced RAG & Knowledge Systems (400 hours)
 
-| Topic | Uren | State-of-the-Art |
+| Topic | Hours | State-of-the-Art |
 |-------|------|-----------------|
 | **Vector Stores & Embeddings** | 150 | |
 | - Advanced embeddings (multilingual, domain-specific) | 50 | Specialized models |
@@ -573,9 +573,9 @@
 | - Document chunking strategies | 50 | Semantic vs. fixed chunks |
 | - Schema learning | 50 | Structured knowledge extraction |
 
-### 5.4 Capstone & Specialization (500 uur)
+### 5.4 Capstone & Specialization (500 hours)
 
-Leerlingen kiezen één specialisatie en voeren zo'n groot project uit.
+Learners choose one specialization and carry out a large project.
 
 **Specialization Options:**
 
@@ -622,9 +622,9 @@ Leerlingen kiezen één specialisatie en voeren zo'n groot project uit.
 
 ## VERIFICATION & ASSESSMENT STRATEGY
 
-### Per-Niveau Milestones:
+### Per-Level Milestones:
 
-| Niveau | Key Assessment | Graduation Criteria |
+| Level | Key Assessment | Graduation Criteria |
 |--------|-----------------|-------------------|
 | 1: Foundations | Python scripting + EDA project | Can write robust Python, manipulate data, make visualizations |
 | 2: Machine Learning | Complete ML pipeline on Kaggle dataset | Can build, tune, evaluate ML models; understand trade-offs |
@@ -800,3 +800,7 @@ Research shows practical ratio optimal for retention & job readiness.
 ---
 
 **Ende of Plan**
+
+
+
+

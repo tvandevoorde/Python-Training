@@ -185,3 +185,6 @@ Encourage students to prompt Copilot like this:
 ## Instructor overrides
 
 - If `COURSE_RULES.md` or an exercise `README` contradicts this file, the exercise rules win.
+
+
+
