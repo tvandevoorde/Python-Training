@@ -1,5 +1,13 @@
 # Python training
 
+## Level Curriculums
+
+- [Level 1 Foundations Curriculum](Level-1-Foundations/CURRICULUM-INDEX.md)
+- [Level 2 Machine Learning Curriculum](Level-2-Machine-Learning/CURRICULUM-INDEX.md)
+- [Level 3 Deep Learning Basics Curriculum](Level-3-Deep-Learning-Basics/CURRICULUM-INDEX.md)
+- [Level 4 Advanced DL and LLMs Curriculum](Level-4-Advanced-DL-and-LLMs/CURRICULUM-INDEX.md)
+- [Level 5 LLM Specialization Curriculum](Level-5-LLM-Specialization/CURRICULUM-INDEX.md)
+
 ## Python Skills
 
 ### 1. Production-Grade Python (Beyond “It Works”)

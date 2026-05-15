@@ -20,19 +20,19 @@ This subLevel converts foundational skills into project delivery capability thro
 
 | Lesson | Title | Key Concepts | Hours |
 |--------|-------|--------------|-------|
-| **1.4.1** | Projects and Integration: Big Picture | delivery mindset, integration map | 8 |
-| **1.4.2** | Project Scoping and Problem Statements | goals, scope boundaries, outcomes | 8 |
-| **1.4.3** | Dataset Sourcing and Access Patterns | APIs, files, ingestion strategy | 8 |
-| **1.4.4** | Data Contracts and Validation Rules | schema checks, constraints | 8 |
-| **1.4.5** | Pipeline Architecture Fundamentals | module boundaries and flow | 8 |
-| **1.4.6** | Ingestion Layer Design | extraction patterns and reliability | 8 |
-| **1.4.7** | Transformation Layer with Pandas | cleaning and transformation | 8 |
-| **1.4.8** | Storage Layer with SQLite | data persistence patterns | 8 |
-| **1.4.9** | Visualization Layer and Reporting | insight communication | 8 |
-| **1.4.10** | Testing Data Pipelines | unit and integration tests | 8 |
-| **1.4.11** | Logging, Error Handling, and Retry Strategy | operational resilience | 8 |
-| **1.4.12** | Mini-Project: Pipeline Component Drill | integration rehearsal | 8 |
-| **1.4.13** | **PROJECT 1**: End-to-End Data Pipeline Build | full build and review | 8 |
+| [**1.4.1**](Lesson-1.4.1-Projects-and-Integration-Big-Picture.md) | Projects and Integration: Big Picture | delivery mindset, integration map | 8 |
+| [**1.4.2**](Lesson-1.4.2-Project-Scoping-and-Problem-Statements.md) | Project Scoping and Problem Statements | goals, scope boundaries, outcomes | 8 |
+| [**1.4.3**](Lesson-1.4.3-Dataset-Sourcing-and-Access-Patterns.md) | Dataset Sourcing and Access Patterns | APIs, files, ingestion strategy | 8 |
+| [**1.4.4**](Lesson-1.4.4-Data-Contracts-and-Validation-Rules.md) | Data Contracts and Validation Rules | schema checks, constraints | 8 |
+| [**1.4.5**](Lesson-1.4.5-Pipeline-Architecture-Fundamentals.md) | Pipeline Architecture Fundamentals | module boundaries and flow | 8 |
+| [**1.4.6**](Lesson-1.4.6-Ingestion-Layer-Design.md) | Ingestion Layer Design | extraction patterns and reliability | 8 |
+| [**1.4.7**](Lesson-1.4.7-Transformation-Layer-with-Pandas.md) | Transformation Layer with Pandas | cleaning and transformation | 8 |
+| [**1.4.8**](Lesson-1.4.8-Storage-Layer-with-SQLite.md) | Storage Layer with SQLite | data persistence patterns | 8 |
+| [**1.4.9**](Lesson-1.4.9-Visualization-Layer-and-Reporting.md) | Visualization Layer and Reporting | insight communication | 8 |
+| [**1.4.10**](Lesson-1.4.10-Testing-Data-Pipelines.md) | Testing Data Pipelines | unit and integration tests | 8 |
+| [**1.4.11**](Lesson-1.4.11-Logging-Error-Handling-and-Retry-Strategy.md) | Logging, Error Handling, and Retry Strategy | operational resilience | 8 |
+| [**1.4.12**](Lesson-1.4.12-Mini-Project-Pipeline-Component-Drill.md) | Mini-Project: Pipeline Component Drill | integration rehearsal | 8 |
+| [**1.4.13**](Lesson-1.4.13-PROJECT-1-End-to-End-Data-Pipeline-Build.md) | **PROJECT 1**: End-to-End Data Pipeline Build | full build and review | 8 |
 
 ---
 
@@ -40,20 +40,24 @@ This subLevel converts foundational skills into project delivery capability thro
 
 | Lesson | Title | Key Concepts | Hours |
 |--------|-------|--------------|-------|
-| **1.4.14** | Portfolio Strategy and Storytelling | audience and narrative | 8 |
-| **1.4.15** | Choosing Datasets for Portfolio Impact | dataset selection strategy | 8 |
-| **1.4.16** | EDA Workflow for Portfolio Project 1 | analysis design and execution | 8 |
-| **1.4.17** | EDA Workflow for Portfolio Project 2 | comparative analysis workflow | 8 |
-| **1.4.18** | EDA Workflow for Portfolio Project 3 | deeper analysis and synthesis | 8 |
-| **1.4.19** | Hypothesis Testing in Portfolio Analyses | statistical validation | 8 |
-| **1.4.20** | Publication-Quality Visual Design | advanced chart quality | 8 |
-| **1.4.21** | Reusable Notebook and Script Templates | productivity and consistency | 8 |
-| **1.4.22** | Writing Case Studies and README Narratives | communication quality | 8 |
-| **1.4.23** | Mini-Project: Portfolio Artifact Sprint | artifact polishing sprint | 8 |
-| **1.4.24** | **PROJECT 2**: Personal Data Analysis Portfolio | full portfolio delivery | 8 |
-| **1.4.25** | **FINAL EXERCISE PROJECT**: Level 1 Integrated Foundations Challenge | integration across 1.1-1.4 | 8 |
+| [**1.4.14**](Lesson-1.4.14-Portfolio-Strategy-and-Storytelling.md) | Portfolio Strategy and Storytelling | audience and narrative | 8 |
+| [**1.4.15**](Lesson-1.4.15-Choosing-Datasets-for-Portfolio-Impact.md) | Choosing Datasets for Portfolio Impact | dataset selection strategy | 8 |
+| [**1.4.16**](Lesson-1.4.16-EDA-Workflow-for-Portfolio-Project-1.md) | EDA Workflow for Portfolio Project 1 | analysis design and execution | 8 |
+| [**1.4.17**](Lesson-1.4.17-EDA-Workflow-for-Portfolio-Project-2.md) | EDA Workflow for Portfolio Project 2 | comparative analysis workflow | 8 |
+| [**1.4.18**](Lesson-1.4.18-EDA-Workflow-for-Portfolio-Project-3.md) | EDA Workflow for Portfolio Project 3 | deeper analysis and synthesis | 8 |
+| [**1.4.19**](Lesson-1.4.19-Hypothesis-Testing-in-Portfolio-Analyses.md) | Hypothesis Testing in Portfolio Analyses | statistical validation | 8 |
+| [**1.4.20**](Lesson-1.4.20-Publication-Quality-Visual-Design.md) | Publication-Quality Visual Design | advanced chart quality | 8 |
+| [**1.4.21**](Lesson-1.4.21-Reusable-Notebook-and-Script-Templates.md) | Reusable Notebook and Script Templates | productivity and consistency | 8 |
+| [**1.4.22**](Lesson-1.4.22-Writing-Case-Studies-and-README-Narratives.md) | Writing Case Studies and README Narratives | communication quality | 8 |
+| [**1.4.23**](Lesson-1.4.23-Mini-Project-Portfolio-Artifact-Sprint.md) | Mini-Project: Portfolio Artifact Sprint | artifact polishing sprint | 8 |
+| [**1.4.24**](Lesson-1.4.24-PROJECT-2-Personal-Data-Analysis-Portfolio.md) | **PROJECT 2**: Personal Data Analysis Portfolio | full portfolio delivery | 8 |
+| [**1.4.25**](Lesson-1.4.25-FINAL-EXERCISE-PROJECT-Level-1-Integrated-Foundations-Challenge.md) | **FINAL EXERCISE PROJECT**: Level 1 Integrated Foundations Challenge | integration across 1.1-1.4 | 8 |
 
 ---
+
+## Final Level 1 Exercise Project
+
+See [FINAL-EXERCISE-PROJECT-LEVEL-1.md](../FINAL-EXERCISE-PROJECT-LEVEL-1.md) for the integrated assessment across this level.
 
 ## Progression Checkpoints
 
@@ -65,6 +69,7 @@ This subLevel converts foundational skills into project delivery capability thro
 | **Week 7-8** | 1.4.21 - 1.4.25 | Project 2 + Final exercise completion | final Level 1 assessment |
 
 ---
+
 
 ## What You'll Be Able to Do After LEVEL 1.4
 

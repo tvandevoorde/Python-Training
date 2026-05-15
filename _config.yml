@@ -1,0 +1,14 @@
+title: Python Training
+description: Structured Python, ML, DL, and LLM curriculum
+theme: minima
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
+
+# Make sure markdown files are published
+include:
+  - README.Md
