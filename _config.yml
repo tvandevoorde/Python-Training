@@ -11,4 +11,4 @@ relative_links:
 
 # Make sure markdown files are published
 include:
-  - index.md
+  - README.md
