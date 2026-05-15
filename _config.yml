@@ -2,6 +2,12 @@ title: Python Training
 description: Structured Python, ML, DL, and LLM curriculum
 theme: minima
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
 plugins:
   - jekyll-relative-links
 
@@ -11,4 +17,5 @@ relative_links:
 
 # Make sure markdown files are published
 include:
+  - index.md
   - README.md
