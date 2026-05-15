@@ -1,5 +1,7 @@
 # Lesson 3.2.14: Seq2Seq - Part 14
 
+> Previous Lesson: [Lesson 3.2.13: LSTM and GRU - Part 13](Lesson-3.2.13-LSTM-and-GRU-Part-13.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 3.2.13 | **Topic**: 3.2 Convolutional and Recurrent Networks (Seq2Seq)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical deep learning workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Seq2Seq - Part 14 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -83,6 +92,26 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Seq2Seq - Part 14.
+2. Implement the smallest working version for: 3.2 Convolutional and Recurrent Networks (Seq2Seq).
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "3.2.14"
+LESSON_TOPIC = "Seq2Seq - Part 14"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
 
 ## Exercises
 
@@ -205,3 +234,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 3.2.15: Attention Intro - Part 15** when ready.
+
+---

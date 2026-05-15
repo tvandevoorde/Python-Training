@@ -1,5 +1,7 @@
 # Lesson 4.3.18: Streaming APIs - Part 18
 
+> Previous Lesson: [Lesson 4.3.17: Serving and Batching - Part 17](Lesson-4.3.17-Serving-and-Batching-Part-17.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 4.3.17 | **Topic**: 4.3 Production LLM Systems (Streaming APIs)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical LLM production workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Streaming APIs - Part 18 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -83,6 +92,29 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Define service-level targets for Streaming APIs - Part 18 (latency, error rate).
+2. Validate request inputs before business logic.
+3. Return structured responses for observability.
+4. Log one key metric per request path.
+
+```python
+from dataclasses import dataclass
+
+LESSON_ID = "4.3.18"
+LESSON_TOPIC = "Streaming APIs - Part 18"
+
+@dataclass
+class Request:
+    text: str
+
+def handle_request(req: Request) -> dict[str, str]:
+    if not req.text.strip():
+        raise ValueError("text must not be empty")
+    return {"status": "ok", "preview": req.text[:40]}
+```
 
 ## Exercises
 
@@ -205,3 +237,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 4.3.19: Monitoring and Cost - Part 19** when ready.
+
+---

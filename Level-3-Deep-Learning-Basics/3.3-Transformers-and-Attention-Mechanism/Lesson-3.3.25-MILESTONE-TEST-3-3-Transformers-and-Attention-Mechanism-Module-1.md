@@ -1,5 +1,7 @@
 # Lesson 3.3.25: MILESTONE TEST: 3.3 Transformers and Attention Mechanism Module 1
 
+> Previous Lesson: [Lesson 3.3.24: Mini-Project: NLP Evaluation Workflow](Lesson-3.3.24-Mini-Project-NLP-Evaluation-Workflow.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 3.3.24 | **Topic**: Assessment - 3.3 Transformers and Attention Mechanism
 
@@ -72,6 +74,37 @@ Build a mini end-to-end workflow with evaluation.
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Write a clear task contract for Assessment - 3.3 Transformers and Attention Mechanism.
+2. Keep prompts constrained (role, input, output schema).
+3. Add one grounding or retrieval check before generation.
+4. Track quality and hallucination metrics per run.
+
+```python
+LESSON_ID = "3.3.25"
+LESSON_TOPIC = "Assessment - 3.3 Transformers and Attention Mechanism"
+
+def build_prompt(user_question: str, context: str) -> str:
+    if not context.strip():
+        raise ValueError("context is required for grounded output")
+    return (
+        "You are a precise assistant.\\n"
+        f"Context: {context}\\n"
+        f"Question: {user_question}\\n"
+        "Answer with 3 concise bullet points."
+    )
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 3.3.26: Multi-Head Attention - Part 26](Lesson-3.3.26-Multi-Head-Attention-Part-26.md)
+
 ## Next Lesson Preview
 
 **Lesson 3.3.26: Multi-Head Attention - Part 26**
@@ -82,3 +115,33 @@ Build a mini end-to-end workflow with evaluation.
 **Milestone Complete.**
 
 Proceed to **Lesson 3.3.26: Multi-Head Attention - Part 26** when ready.
+
+---
+
+## Learning Objectives
+
+By the end of this lesson, you will be able to:
+- Explain the key idea behind MILESTONE TEST: 3.3 Transformers and Attention Mechanism Module 1
+- Implement a small practical example
+- Identify one common failure mode and fix
+
+---
+
+## Introduction: Why This Matters
+
+MILESTONE TEST: 3.3 Transformers and Attention Mechanism Module 1 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+

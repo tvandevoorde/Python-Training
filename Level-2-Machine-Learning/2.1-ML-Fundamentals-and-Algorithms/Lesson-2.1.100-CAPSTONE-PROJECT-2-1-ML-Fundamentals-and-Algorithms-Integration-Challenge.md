@@ -1,5 +1,7 @@
 # Lesson 2.1.100: CAPSTONE PROJECT: 2.1 ML Fundamentals and Algorithms Integration Challenge
 
+> Previous Lesson: [Lesson 2.1.99: Feature Engineering - Part 99](Lesson-2.1.99-Feature-Engineering-Part-99.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Advanced  
 **Prerequisites**: Lesson 2.1.99 | **Topic**: 2.1 ML Fundamentals and Algorithms (Regression Models)
 
@@ -54,6 +56,33 @@ This lesson is a major build checkpoint with end-to-end deliverables.
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Define target metric and baseline model for CAPSTONE PROJECT: 2.1 ML Fundamentals and Algorithms Integration Challenge.
+2. Split data before any transformation to avoid leakage.
+3. Use a pipeline so preprocessing and modeling are coupled.
+4. Report both score and key error cases.
+
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+
+LESSON_ID = "2.1.100"
+LESSON_TOPIC = "2.1 ML Fundamentals and Algorithms (Regression Models)"
+y_true = [1, 0, 1, 1]
+y_pred = [1, 0, 0, 1]
+print(accuracy_score(y_true, y_pred))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Sublevel Index](CURRICULUM-INDEX.md)
+
 ## Next Lesson Preview
 
 **LEVEL 2.2 Practical ML Engineering**
@@ -64,3 +93,33 @@ This lesson is a major build checkpoint with end-to-end deliverables.
 **Lesson Complete.**
 
 Proceed to **LEVEL 2.2 Practical ML Engineering** when ready.
+
+---
+
+## Learning Objectives
+
+By the end of this lesson, you will be able to:
+- Explain the key idea behind CAPSTONE PROJECT: 2.1 ML Fundamentals and Algorithms Integration Challenge
+- Implement a small practical example
+- Identify one common failure mode and fix
+
+---
+
+## Introduction: Why This Matters
+
+CAPSTONE PROJECT: 2.1 ML Fundamentals and Algorithms Integration Challenge matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+

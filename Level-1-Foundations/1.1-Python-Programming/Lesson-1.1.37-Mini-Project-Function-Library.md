@@ -1,5 +1,7 @@
 # Lesson 1.1.37: Mini-Project: Function Library
 
+> Previous Lesson: [Lesson 1.1.36: Debugging Functions](Lesson-1.1.36-Debugging-Functions.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lessons 1.1.24–1.1.36 (Functions & Scope)
 
@@ -17,6 +19,13 @@ By the end of this lesson, you will be able to:
 6. **Refactor** code for clarity and reusability
 7. **Apply** scope rules to organize function-level variables
 8. **Debug** common function design issues
+
+---
+
+## Introduction: Why This Matters
+
+Mini-Project: Function Library matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -808,4 +817,48 @@ You've now completed a substantial function library. Use these patterns in your 
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Mini-Project: Function Library.
+2. Implement the smallest working version for: Mini-Project: Function Library.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.37"
+LESSON_TOPIC = "Mini-Project: Function Library"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.38: MILESTONE TEST – Functions & Scope](Lesson-1.1.38-MILESTONE-TEST-Functions-Scope.md)
 

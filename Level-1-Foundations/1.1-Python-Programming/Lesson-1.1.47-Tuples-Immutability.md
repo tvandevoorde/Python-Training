@@ -1,5 +1,7 @@
 # Lesson 1.1.46: Tuples & Immutability
 
+> Previous Lesson: [Lesson 1.1.46: Sets & Set Operations](Lesson-1.1.46-Sets-Operations.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lessons 1.1.39-1.1.45 (Collections fundamentals)
 
@@ -16,6 +18,13 @@ By the end of this lesson, you will be able to:
 - Unpack tuple values
 - Use tuples as dictionary keys
 - Recognize tuple performance benefits
+
+---
+
+## Introduction: Why This Matters
+
+Tuples & Immutability matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -446,4 +455,35 @@ print(f"Can carry: {inv.can_carry()}")
 
 
 
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Tuples & Immutability.
+2. Implement the smallest working version for: Tuples & Immutability.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.47"
+LESSON_TOPIC = "Tuples & Immutability"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.48: Choosing the Right Data Structure](Lesson-1.1.48-Choosing-Right-Data-Structure.md)
 

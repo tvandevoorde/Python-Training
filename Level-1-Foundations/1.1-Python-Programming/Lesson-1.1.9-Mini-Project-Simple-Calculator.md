@@ -1,5 +1,7 @@
 # Lesson 1.1.9: Mini-Project: Simple Calculator
 
+> Previous Lesson: [Lesson 1.1.8: Variable Scope & Reassignment](Lesson-1.1.8-Variable-Scope-and-Reassignment.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner-Intermediate  
 **Prerequisites**: Lessons 1.1.1 - 1.1.8 | **Topic**: Topic 1 Capstone (Variables, Operators, Scope)
 
@@ -13,6 +15,13 @@ By the end of this lesson, you will be able to:
 - Apply scope principles to organize code
 - Handle type conversion and user input safely
 - Debug and test a multi-function application
+
+---
+
+## Introduction: Why This Matters
+
+Mini-Project: Simple Calculator matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -777,4 +786,35 @@ You're ready for:
 
 
 
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Mini-Project: Simple Calculator.
+2. Implement the smallest working version for: Topic 1 Capstone (Variables, Operators, Scope).
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.9"
+LESSON_TOPIC = "Mini-Project: Simple Calculator"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.10: MILESTONE TEST - Variables & Operators](Lesson-1.1.10-MILESTONE-TEST-Variables-and-Operators.md)
 

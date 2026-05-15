@@ -1,5 +1,7 @@
 # Lesson 1.1.5: String Manipulation Deep Dive
 
+> Previous Lesson: [Lesson 1.1.4: Type Conversion & Casting](Lesson-1.1.4-Type-Conversion-and-Casting.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 1.1.1 - 1.1.4 | **Topic**: Variables, Types, Operators
 
@@ -13,6 +15,13 @@ By the end of this lesson, you will be able to:
 - Manipulate text data effectively
 - Understand string immutability
 - Build programs that process text
+
+---
+
+## Introduction: Why This Matters
+
+String Manipulation Deep Dive matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -248,6 +257,26 @@ print(f"Most common: {most_common[0]} ({most_common[1]} times)")
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: String Manipulation Deep Dive.
+2. Implement the smallest working version for: Variables, Types, Operators.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.5"
+LESSON_TOPIC = "String Manipulation Deep Dive"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
 ## Exercises
 
 ### Difficulty 1: Starter 🟩
@@ -425,3 +454,4 @@ Proceed to **Lesson 1.1.6** when you're ready.
 
 
 
+---

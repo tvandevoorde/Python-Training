@@ -1,5 +1,7 @@
 # Lesson 4.2.35: DPO - Part 35
 
+> Previous Lesson: [Lesson 4.2.34: RLHF - Part 34](Lesson-4.2.34-RLHF-Part-34.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 4.2.34 | **Topic**: 4.2 Fine-tuning Methodologies (DPO)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical LLM fine-tuning workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+DPO - Part 35 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -83,6 +92,25 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Pick one baseline model and one fine-tuning method for DPO - Part 35.
+2. Freeze all non-essential parts first (PEFT mindset).
+3. Track train/validation loss each epoch with fixed seeds.
+4. Compare quality gain against compute cost before scaling.
+
+```python
+LESSON_ID = "4.2.35"
+LESSON_TOPIC = "4.2 Fine-tuning Methodologies (DPO)"
+
+def choose_trainable_layers(method: str) -> list[str]:
+    if method.lower() == "lora":
+        return ["q_proj", "v_proj"]
+    return ["all"]
+
+print(choose_trainable_layers("lora"))
+```
 
 ## Exercises
 
@@ -205,3 +233,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 4.2.36: Mini-Project: Mixed Precision Workflow** when ready.
+
+---

@@ -1,5 +1,7 @@
 # Lesson 1.1.69: Debugging with Exceptions
 
+> Previous Lesson: [Lesson 1.1.68: Writing Defensive Code](Lesson-1.1.68-Writing-Defensive-Code.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lessons 1.1.62-1.1.68
 
@@ -14,6 +16,13 @@
 5. **Implement** debugging best practices
 6. **Utilize** Python debugger basics
 7. **Isolate** exception root causes
+
+---
+
+## Introduction: Why This Matters
+
+Debugging with Exceptions matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -362,4 +371,55 @@ def debug_save_state(operation):
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Define expected behavior for: Debugging with Exceptions.
+2. Add one happy-path and one edge-case test.
+3. Assert exact output and clear error messages.
+4. Keep test names explicit and focused on one behavior.
+
+```python
+LESSON_ID = "1.1.69"
+LESSON_TOPIC = "Debugging with Exceptions"
+
+def parse_positive(value: str) -> int:
+    number = int(value)
+    if number <= 0:
+        raise ValueError("value must be positive")
+    return number
+
+def test_parse_positive_returns_int() -> None:
+    assert parse_positive("5") == 5
+
+def test_parse_positive_rejects_zero() -> None:
+    try:
+        parse_positive("0")
+    except ValueError as exc:
+        assert "positive" in str(exc)
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.70: Logging Basics](Lesson-1.1.70-Logging-Basics.md)
 

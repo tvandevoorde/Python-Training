@@ -1,5 +1,7 @@
 # Lesson 1.1.58: CSV Files & csv Module
 
+> Previous Lesson: [Lesson 1.1.57: JSON Format & Serialization](Lesson-1.1.57-JSON-Format-Serialization.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.1.53 (Reading Files), Lesson 1.1.54 (Writing Files)
 
@@ -17,6 +19,13 @@ By the end of this lesson, you will:
 6. Use `DictWriter` for dict-based output
 7. Handle encoding and newline issues
 8. Transform and filter CSV data
+
+---
+
+## Introduction: Why This Matters
+
+CSV Files & csv Module matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -454,9 +463,39 @@ def merge_csv_files(files, output_file):
 
 ---
 
-**Next Lesson**: [1.1.59 - Paths & pathlib](Lesson-1.1.59-Paths-pathlib.md)  
 **Previous Lesson**: [1.1.57 - JSON Format & Serialization](Lesson-1.1.57-JSON-Format-Serialization.md)
 
 
 
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Start from a tiny sample that reflects CSV Files & csv Module.
+2. Make transformations explicit (no hidden in-place side effects).
+3. Validate schema assumptions after each step.
+4. Save intermediate outputs for debugging reproducibility.
+
+```python
+import pandas as pd
+
+LESSON_ID = "1.1.58"
+LESSON_TOPIC = "CSV Files & csv Module"
+frame = pd.DataFrame({"value": [10, None, 30]})
+clean = frame.copy()
+clean["value"] = clean["value"].fillna(clean["value"].median())
+
+assert "value" in clean.columns
+assert clean["value"].isna().sum() == 0
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.59: Paths & pathlib](Lesson-1.1.59-Paths-pathlib.md)
 

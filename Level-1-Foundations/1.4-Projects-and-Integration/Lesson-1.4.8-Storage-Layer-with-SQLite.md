@@ -1,5 +1,7 @@
 # Lesson 1.4.8: Storage Layer with SQLite
 
+> Previous Lesson: [Lesson 1.4.7: Transformation Layer with Pandas](Lesson-1.4.7-Transformation-Layer-with-Pandas.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.4.7 | **Topic**: Project Foundations
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical component for an end-to-end project
 - Validate outputs and handle common failure modes
 - Document implementation choices clearly
+
+---
+
+## Introduction: Why This Matters
+
+Storage Layer with SQLite matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -89,6 +98,25 @@ print(source)
 `
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Define the retrieval objective for Storage Layer with SQLite (precision vs recall).
+2. Start with a small curated document set and deterministic chunking.
+3. Retrieve top-k candidates, then rerank before generation.
+4. Log source chunks with the final answer for traceability.
+
+```python
+LESSON_ID = "1.4.8"
+LESSON_TOPIC = "Project Foundations"
+
+def retrieve_top_k(query: str, docs: list[str], k: int = 2) -> list[str]:
+    ranked = sorted(docs, key=lambda d: query.lower() in d.lower(), reverse=True)
+    return ranked[:k]
+
+chunks = ["LLM inference uses KV cache.", "Pandas handles tabular data."]
+print(retrieve_top_k("inference", chunks, k=1))
+```
 
 ## Exercises
 
@@ -208,3 +236,5 @@ def summarize_by_key(df: pd.DataFrame, key: str, value: str) -> pd.DataFrame:
 **Lesson Complete.**
 
 Proceed to **Lesson 1.4.9: Visualization Layer and Reporting** when ready.
+
+---

@@ -1,5 +1,7 @@
 # Lesson 1.1.31: Functions Capstone Project
 
+> Previous Lesson: [Lesson 1.1.30: Decorators Basics](Lesson-1.1.30-Decorators-Basics.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate-Advanced  
 **Prerequisites**: Lesson 1.1.30 (Decorators) | **Topic**: Functions - Integration Project
 
@@ -14,6 +16,13 @@ By the end of this lesson, you will be able to:
 - Write well-documented, reusable code
 - Test comprehensive function libraries
 - Build real-world applications
+
+---
+
+## Introduction: Why This Matters
+
+Functions Capstone Project matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -537,4 +546,48 @@ Proceed to **Lesson 1.1.32: Milestone Test 3** when ready.
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Functions Capstone Project.
+2. Implement the smallest working version for: Functions - Integration Project.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.31"
+LESSON_TOPIC = "Functions Capstone Project"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.32: Milestone Test 3 - Functions & Scope](Lesson-1.1.32-Milestone-Test-3-Functions-and-Scope.md)
 

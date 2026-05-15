@@ -1,5 +1,7 @@
 # Lesson 1.1.21: MILESTONE TEST 2 - Control Flow & Loops
 
+> Previous Lesson: [Lesson 1.1.20: Capstone Project - Tic-Tac-Toe Game](Lesson-1.1.20-Capstone-Tic-Tac-Toe-Game.md)
+
 **Estimated Time**: 2-3 hours | **Difficulty**: Comprehensive Assessment  
 **Prerequisites**: Lessons 1.1.11-1.1.20 | **Topic**: Assessment - Topic 2
 
@@ -447,4 +449,64 @@ Next: Lesson 2.1 - Functions & Scope
 
 
 
+
+---
+
+## Learning Objectives
+
+By the end of this lesson, you will be able to:
+- Explain the key idea behind MILESTONE TEST 2 - Control Flow & Loops
+- Implement a small practical example
+- Identify one common failure mode and fix
+
+---
+
+## Introduction: Why This Matters
+
+MILESTONE TEST 2 - Control Flow & Loops matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: MILESTONE TEST 2 - Control Flow & Loops.
+2. Implement the smallest working version for: Assessment - Topic 2.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.21"
+LESSON_TOPIC = "MILESTONE TEST 2 - Control Flow & Loops"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.22: Defining Functions](Lesson-1.1.22-Defining-Functions.md)
 

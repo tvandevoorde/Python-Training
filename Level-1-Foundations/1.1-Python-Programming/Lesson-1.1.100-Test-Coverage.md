@@ -1,5 +1,7 @@
 # Lesson 1.1.100: Test Coverage
 
+> Previous Lesson: [Lesson 1.1.99: Test Fixtures & Mocking](Lesson-1.1.99-Test-Fixtures-Mocking.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Advanced  
 **Prerequisites**: Lesson 1.1.99
 
@@ -12,6 +14,13 @@
 3. **Improve** test quality
 4. **Achieve** coverage targets
 5. **Balance** coverage and practicality
+
+---
+
+## Introduction: Why This Matters
+
+Test Coverage matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -117,4 +126,47 @@ exclude_lines =
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Define the retrieval objective for Test Coverage (precision vs recall).
+2. Start with a small curated document set and deterministic chunking.
+3. Retrieve top-k candidates, then rerank before generation.
+4. Log source chunks with the final answer for traceability.
+
+```python
+LESSON_ID = "1.1.100"
+LESSON_TOPIC = "Test Coverage"
+
+def retrieve_top_k(query: str, docs: list[str], k: int = 2) -> list[str]:
+    ranked = sorted(docs, key=lambda d: query.lower() in d.lower(), reverse=True)
+    return ranked[:k]
+
+chunks = ["LLM inference uses KV cache.", "Pandas handles tabular data."]
+print(retrieve_top_k("inference", chunks, k=1))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.101: Advanced Testing Patterns](Lesson-1.1.101-Advanced-Testing.md)
 

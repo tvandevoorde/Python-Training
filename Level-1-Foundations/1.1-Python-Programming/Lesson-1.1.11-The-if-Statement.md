@@ -1,5 +1,7 @@
 # Lesson 1.1.11: The `if` Statement
 
+> Previous Lesson: [Lesson 1.1.10: MILESTONE TEST - Variables & Operators](Lesson-1.1.10-MILESTONE-TEST-Variables-and-Operators.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 1.1.7 (Boolean Logic & Truth Values) | **Topic**: Control Flow - Conditional Execution
 
@@ -13,6 +15,13 @@ By the end of this lesson, you will be able to:
 - Understand indentation and code blocks in Python
 - Use different data types in conditions (not just boolean)
 - Apply `if` statements to solve practical problems
+
+---
+
+## Introduction: Why This Matters
+
+The `if` Statement matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -335,6 +344,26 @@ except ValueError:
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: The `if` Statement.
+2. Implement the smallest working version for: Control Flow - Conditional Execution.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.11"
+LESSON_TOPIC = "The `if` Statement"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
 ## Exercises
 
 ### Difficulty 1: Starter 🟩
@@ -643,3 +672,4 @@ Proceed to **Lesson 1.1.12** when you're ready.
 
 
 
+---

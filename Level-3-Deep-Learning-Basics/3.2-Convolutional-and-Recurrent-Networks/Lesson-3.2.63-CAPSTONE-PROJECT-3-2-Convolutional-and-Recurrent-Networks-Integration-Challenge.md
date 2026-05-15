@@ -1,5 +1,7 @@
 # Lesson 3.2.63: CAPSTONE PROJECT: 3.2 Convolutional and Recurrent Networks Integration Challenge
 
+> Previous Lesson: [Lesson 3.2.62: Seq2Seq - Part 62](Lesson-3.2.62-Seq2Seq-Part-62.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Advanced  
 **Prerequisites**: Lesson 3.2.62 | **Topic**: 3.2 Convolutional and Recurrent Networks (Attention Intro)
 
@@ -54,6 +56,37 @@ This lesson is a major build checkpoint with end-to-end deliverables.
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Write a clear task contract for 3.2 Convolutional and Recurrent Networks (Attention Intro).
+2. Keep prompts constrained (role, input, output schema).
+3. Add one grounding or retrieval check before generation.
+4. Track quality and hallucination metrics per run.
+
+```python
+LESSON_ID = "3.2.63"
+LESSON_TOPIC = "3.2 Convolutional and Recurrent Networks (Attention Intro)"
+
+def build_prompt(user_question: str, context: str) -> str:
+    if not context.strip():
+        raise ValueError("context is required for grounded output")
+    return (
+        "You are a precise assistant.\\n"
+        f"Context: {context}\\n"
+        f"Question: {user_question}\\n"
+        "Answer with 3 concise bullet points."
+    )
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Sublevel Index](CURRICULUM-INDEX.md)
+
 ## Next Lesson Preview
 
 **LEVEL 3.3 Transformers and Attention Mechanism**
@@ -64,3 +97,33 @@ This lesson is a major build checkpoint with end-to-end deliverables.
 **Lesson Complete.**
 
 Proceed to **LEVEL 3.3 Transformers and Attention Mechanism** when ready.
+
+---
+
+## Learning Objectives
+
+By the end of this lesson, you will be able to:
+- Explain the key idea behind CAPSTONE PROJECT: 3.2 Convolutional and Recurrent Networks Integration Challenge
+- Implement a small practical example
+- Identify one common failure mode and fix
+
+---
+
+## Introduction: Why This Matters
+
+CAPSTONE PROJECT: 3.2 Convolutional and Recurrent Networks Integration Challenge matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+

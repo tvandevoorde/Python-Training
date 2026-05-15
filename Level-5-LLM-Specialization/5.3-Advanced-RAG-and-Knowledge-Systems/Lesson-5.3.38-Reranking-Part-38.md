@@ -1,5 +1,7 @@
 # Lesson 5.3.38: Reranking - Part 38
 
+> Previous Lesson: [Lesson 5.3.37: Hybrid Retrieval - Part 37](Lesson-5.3.37-Hybrid-Retrieval-Part-37.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 5.3.37 | **Topic**: 5.3 Advanced RAG and Knowledge Systems (Reranking)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical RAG system workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Reranking - Part 38 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -88,6 +97,25 @@ print("hallucination_rate", hallucination_rate)
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Define the retrieval objective for Reranking - Part 38 (precision vs recall).
+2. Start with a small curated document set and deterministic chunking.
+3. Retrieve top-k candidates, then rerank before generation.
+4. Log source chunks with the final answer for traceability.
+
+```python
+LESSON_ID = "5.3.38"
+LESSON_TOPIC = "5.3 Advanced RAG and Knowledge Systems (Reranking)"
+
+def retrieve_top_k(query: str, docs: list[str], k: int = 2) -> list[str]:
+    ranked = sorted(docs, key=lambda d: query.lower() in d.lower(), reverse=True)
+    return ranked[:k]
+
+chunks = ["LLM inference uses KV cache.", "Pandas handles tabular data."]
+print(retrieve_top_k("inference", chunks, k=1))
+```
 
 ## Exercises
 
@@ -206,3 +234,5 @@ def evaluate_scores(quality: float, stability: float) -> dict[str, float]:
 **Lesson Complete.**
 
 Proceed to **Lesson 5.3.39: Chunking Design - Part 39** when ready.
+
+---

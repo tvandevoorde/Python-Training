@@ -1,5 +1,7 @@
 # Lesson 1.1.1: Intro to Python and Variables
 
+> Previous Lesson: [Sublevel Index](CURRICULUM-INDEX.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: None | **Topic**: Variables, Types, Operators
 
@@ -14,6 +16,13 @@ By the end of this lesson, you will be able to:
 - Understand variable naming conventions
 - Print output to the console
 - Understand basic data types: `int`, `float`, `str`, `bool`
+
+---
+
+## Introduction: Why This Matters
+
+Intro to Python and Variables matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -320,6 +329,26 @@ discount = 0.1 if age > 65 else 0.0
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Intro to Python and Variables.
+2. Implement the smallest working version for: Variables, Types, Operators.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.1"
+LESSON_TOPIC = "Intro to Python and Variables"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
 ## Exercises
 
 ### Difficulty 1: Starter 🟩
@@ -568,3 +597,4 @@ Proceed to **Lesson 1.1.2** when you're ready.
 
 
 
+---

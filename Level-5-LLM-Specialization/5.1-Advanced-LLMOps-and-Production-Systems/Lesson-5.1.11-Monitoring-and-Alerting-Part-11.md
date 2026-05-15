@@ -1,5 +1,7 @@
 # Lesson 5.1.11: Monitoring and Alerting - Part 11
 
+> Previous Lesson: [Lesson 5.1.10: A/B Testing - Part 10](Lesson-5.1.10-A-B-Testing-Part-10.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 5.1.10 | **Topic**: 5.1 Advanced LLMOps and Production Systems (Monitoring and Alerting)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical LLM operations workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Monitoring and Alerting - Part 11 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -88,6 +97,29 @@ print("hallucination_rate", hallucination_rate)
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Define service-level targets for Monitoring and Alerting - Part 11 (latency, error rate).
+2. Validate request inputs before business logic.
+3. Return structured responses for observability.
+4. Log one key metric per request path.
+
+```python
+from dataclasses import dataclass
+
+LESSON_ID = "5.1.11"
+LESSON_TOPIC = "Monitoring and Alerting - Part 11"
+
+@dataclass
+class Request:
+    text: str
+
+def handle_request(req: Request) -> dict[str, str]:
+    if not req.text.strip():
+        raise ValueError("text must not be empty")
+    return {"status": "ok", "preview": req.text[:40]}
+```
 
 ## Exercises
 
@@ -206,3 +238,5 @@ def evaluate_scores(quality: float, stability: float) -> dict[str, float]:
 **Lesson Complete.**
 
 Proceed to **Lesson 5.1.12: Mini-Project: GPU Orchestration Workflow** when ready.
+
+---

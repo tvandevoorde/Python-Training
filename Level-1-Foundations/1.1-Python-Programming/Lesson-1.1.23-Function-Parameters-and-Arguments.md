@@ -1,5 +1,7 @@
 # Lesson 1.1.23: Function Parameters & Arguments
 
+> Previous Lesson: [Lesson 1.1.22: Defining Functions](Lesson-1.1.22-Defining-Functions.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.1.22 (Defining Functions) | **Topic**: Functions - Parameter Handling
 
@@ -14,6 +16,13 @@ By the end of this lesson, you will be able to:
 - Set default parameter values
 - Understand parameter ordering
 - Use `*args` and `**kwargs` for variable arguments
+
+---
+
+## Introduction: Why This Matters
+
+Function Parameters & Arguments matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -457,6 +466,26 @@ print(f"Final Grade: {grade:.1f}")
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Function Parameters & Arguments.
+2. Implement the smallest working version for: Functions - Parameter Handling.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.23"
+LESSON_TOPIC = "Function Parameters & Arguments"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
 ## Exercises
 
 ### Difficulty 1: Starter 🟩
@@ -713,3 +742,4 @@ Proceed to **Lesson 1.1.24** when you're ready.
 
 
 
+---

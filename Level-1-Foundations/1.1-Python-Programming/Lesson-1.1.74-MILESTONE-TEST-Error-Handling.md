@@ -1,5 +1,7 @@
 # Lesson 1.1.74: MILESTONE TEST – Error Handling
 
+> Previous Lesson: [Lesson 1.1.73: Mini-Project – Robust File Processor](Lesson-1.1.73-Mini-Project-Robust-File-Processor.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lessons 1.1.62-1.1.73 (Complete Error Handling topic)
 
@@ -378,4 +380,71 @@ Your error handling skills are now production-ready. Continue to [Topic 7: OOP B
 
 
 
+
+---
+
+## Learning Objectives
+
+By the end of this lesson, you will be able to:
+- Explain the key idea behind MILESTONE TEST – Error Handling
+- Implement a small practical example
+- Identify one common failure mode and fix
+
+---
+
+## Introduction: Why This Matters
+
+MILESTONE TEST – Error Handling matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Define expected behavior for: MILESTONE TEST – Error Handling.
+2. Add one happy-path and one edge-case test.
+3. Assert exact output and clear error messages.
+4. Keep test names explicit and focused on one behavior.
+
+```python
+LESSON_ID = "1.1.74"
+LESSON_TOPIC = "MILESTONE TEST – Error Handling"
+
+def parse_positive(value: str) -> int:
+    number = int(value)
+    if number <= 0:
+        raise ValueError("value must be positive")
+    return number
+
+def test_parse_positive_returns_int() -> None:
+    assert parse_positive("5") == 5
+
+def test_parse_positive_rejects_zero() -> None:
+    try:
+        parse_positive("0")
+    except ValueError as exc:
+        assert "positive" in str(exc)
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.75: Classes & Objects](Lesson-1.1.75-Classes-Objects.md)
 

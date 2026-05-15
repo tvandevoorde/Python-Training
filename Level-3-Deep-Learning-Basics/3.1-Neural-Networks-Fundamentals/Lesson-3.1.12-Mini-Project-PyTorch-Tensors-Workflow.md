@@ -1,5 +1,7 @@
 # Lesson 3.1.12: Mini-Project: PyTorch Tensors Workflow
 
+> Previous Lesson: [Lesson 3.1.11: Backpropagation - Part 11](Lesson-3.1.11-Backpropagation-Part-11.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 3.1.11 | **Topic**: 3.1 Neural Networks Fundamentals (PyTorch Tensors)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical deep learning workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Mini-Project: PyTorch Tensors Workflow matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -83,6 +92,26 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Mini-Project: PyTorch Tensors Workflow.
+2. Implement the smallest working version for: 3.1 Neural Networks Fundamentals (PyTorch Tensors).
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "3.1.12"
+LESSON_TOPIC = "Mini-Project: PyTorch Tensors Workflow"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
 
 ## Exercises
 
@@ -205,3 +234,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 3.1.13: Autograd - Part 13** when ready.
+
+---

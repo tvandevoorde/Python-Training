@@ -1,5 +1,7 @@
 # Lesson 1.3.63: Debugging and Refactoring Notebook Code
 
+> Previous Lesson: [Lesson 1.3.62: Data Exploration Workflow in Notebooks](Lesson-1.3.62-Data-Exploration-Workflow-in-Notebooks.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.3.62 | **Topic**: Jupyter Notebooks
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Apply this concept to realistic data tasks
 - Debug common mistakes and edge cases
 - Build a small reusable workflow in Python
+
+---
+
+## Introduction: Why This Matters
+
+Debugging and Refactoring Notebook Code matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -90,6 +99,33 @@ print(result)
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Define expected behavior for: Debugging and Refactoring Notebook Code.
+2. Add one happy-path and one edge-case test.
+3. Assert exact output and clear error messages.
+4. Keep test names explicit and focused on one behavior.
+
+```python
+LESSON_ID = "1.3.63"
+LESSON_TOPIC = "Debugging and Refactoring Notebook Code"
+
+def parse_positive(value: str) -> int:
+    number = int(value)
+    if number <= 0:
+        raise ValueError("value must be positive")
+    return number
+
+def test_parse_positive_returns_int() -> None:
+    assert parse_positive("5") == 5
+
+def test_parse_positive_rejects_zero() -> None:
+    try:
+        parse_positive("0")
+    except ValueError as exc:
+        assert "positive" in str(exc)
+```
 
 ## Exercises
 
@@ -210,3 +246,5 @@ def grouped_stats(df: pd.DataFrame, by_col: str, value_col: str) -> pd.DataFrame
 
 Proceed to **Lesson 1.3.64: Converting Notebooks to Python Scripts** when ready.
 ```
+
+---

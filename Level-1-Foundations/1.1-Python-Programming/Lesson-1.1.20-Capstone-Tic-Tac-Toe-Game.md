@@ -1,5 +1,7 @@
 # Lesson 1.1.20: Capstone Project - Tic-Tac-Toe Game
 
+> Previous Lesson: [Lesson 1.1.19: Loop Debugging & Optimization](Lesson-1.1.19-Loop-Debugging-and-Optimization.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: All Lesson 1.1.11-1.1.19 | **Topic**: Loops - Comprehensive Integration
 
@@ -14,6 +16,13 @@ By the end of this project, you will be able to:
 - Apply conditional statements with loops
 - Debug and optimize a complex program
 - Handle edge cases and user validation
+
+---
+
+## Introduction: Why This Matters
+
+Capstone Project - Tic-Tac-Toe Game matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -637,6 +646,35 @@ This project uses:
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Capstone Project - Tic-Tac-Toe Game.
+2. Implement the smallest working version for: Loops - Comprehensive Integration.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.20"
+LESSON_TOPIC = "Capstone Project - Tic-Tac-Toe Game"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.21: MILESTONE TEST 2 - Control Flow & Loops](Lesson-1.1.21-MILESTONE-TEST-2-Control-Flow-and-Loops.md)
+
 ## Homework & Submission
 
 Required:
@@ -676,4 +714,17 @@ Proceed to **Lesson 1.1.21** (Milestone Test 2) to assess mastery of this topic.
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
 

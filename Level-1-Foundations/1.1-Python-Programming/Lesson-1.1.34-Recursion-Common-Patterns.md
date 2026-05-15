@@ -1,5 +1,7 @@
 # Lesson 1.1.34: Recursion: Common Patterns
 
+> Previous Lesson: [Lesson 1.1.33: Recursion Basics](Lesson-1.1.33-Recursion-Basics.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate-Advanced  
 **Prerequisites**: Lesson 1.1.33 (Recursion Basics)
 
@@ -15,6 +17,13 @@ By the end of this lesson, you will be able to:
 - Implement accumulator patterns
 - Optimize recursive functions
 - Solve complex problems recursively
+
+---
+
+## Introduction: Why This Matters
+
+Recursion: Common Patterns matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -577,4 +586,35 @@ def sum_numbers(n):
 
 
 
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Recursion: Common Patterns.
+2. Implement the smallest working version for: Recursion: Common Patterns.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.34"
+LESSON_TOPIC = "Recursion: Common Patterns"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.35: Pure Functions & Side Effects](Lesson-1.1.35-Pure-Functions-Side-Effects.md)
 

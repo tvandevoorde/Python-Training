@@ -1,5 +1,7 @@
 # Lesson 5.4.44: LLMOps Track - Part 44
 
+> Previous Lesson: [Lesson 5.4.43: Research Track - Part 43](Lesson-5.4.43-Research-Track-Part-43.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 5.4.43 | **Topic**: 5.4 Capstone and Specialization (LLMOps Track)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical specialization project workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+LLMOps Track - Part 44 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -88,6 +97,28 @@ print("hallucination_rate", hallucination_rate)
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Write a clear task contract for 5.4 Capstone and Specialization (LLMOps Track).
+2. Keep prompts constrained (role, input, output schema).
+3. Add one grounding or retrieval check before generation.
+4. Track quality and hallucination metrics per run.
+
+```python
+LESSON_ID = "5.4.44"
+LESSON_TOPIC = "5.4 Capstone and Specialization (LLMOps Track)"
+
+def build_prompt(user_question: str, context: str) -> str:
+    if not context.strip():
+        raise ValueError("context is required for grounded output")
+    return (
+        "You are a precise assistant.\\n"
+        f"Context: {context}\\n"
+        f"Question: {user_question}\\n"
+        "Answer with 3 concise bullet points."
+    )
+```
 
 ## Exercises
 
@@ -206,3 +237,5 @@ def evaluate_scores(quality: float, stability: float) -> dict[str, float]:
 **Lesson Complete.**
 
 Proceed to **Lesson 5.4.45: Domain Application Track - Part 45** when ready.
+
+---

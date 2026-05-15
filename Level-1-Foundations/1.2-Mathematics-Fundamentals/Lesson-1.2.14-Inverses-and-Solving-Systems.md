@@ -1,5 +1,7 @@
 # Lesson 1.2.14: Inverses and Solving Systems
 
+> Previous Lesson: [Lesson 1.2.13: Determinants](Lesson-1.2.13-Determinants.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.2.13 | **Topic**: Linear Algebra Foundations
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Solve Ax = b using inverse
 - Identify when inverse exists
 - Use NumPy for inverse and solve
+
+---
+
+## Introduction: Why This Matters
+
+Inverses and Solving Systems matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -82,6 +91,27 @@ for b in bs:
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. State the mathematical assumption behind Inverses and Solving Systems.
+2. Verify with a tiny numeric example first.
+3. Compare analytical and computed results.
+4. Flag where rounding or scale can break intuition.
+
+```python
+from math import isclose
+
+LESSON_ID = "1.2.14"
+LESSON_TOPIC = "Inverses and Solving Systems"
+
+def finite_difference_square(x: float, h: float = 1e-5) -> float:
+    return ((x + h) ** 2 - x ** 2) / h
+
+approx = finite_difference_square(3.0)
+exact = 2 * 3.0
+assert isclose(approx, exact, rel_tol=1e-3)
+```
 
 ## Exercises
 
@@ -200,3 +230,4 @@ Proceed to **Lesson 1.2.15** when ready.
 
 
 
+---

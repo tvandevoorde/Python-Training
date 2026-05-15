@@ -1,5 +1,7 @@
 # Lesson 1.1.55: Working with Text Files
 
+> Previous Lesson: [Lesson 1.1.54: Writing Files](Lesson-1.1.54-Writing-Files.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.1.53 (Reading Files), Lesson 1.1.54 (Writing Files)
 
@@ -17,6 +19,13 @@ By the end of this lesson, you will:
 6. Deal with inconsistent formatting
 7. Process large text files efficiently
 8. Work with delimited data (tabs, spaces, custom delimiters)
+
+---
+
+## Introduction: Why This Matters
+
+Working with Text Files matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -489,9 +498,39 @@ with open("log_report.txt", "w") as f:
 
 ---
 
-**Next Lesson**: [1.1.56 - Reading & Writing Binary Files](Lesson-1.1.56-Reading-Writing-Binary-Files.md)  
 **Previous Lesson**: [1.1.54 - Writing Files](Lesson-1.1.54-Writing-Files.md)
 
 
 
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Working with Text Files.
+2. Implement the smallest working version for: Working with Text Files.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.55"
+LESSON_TOPIC = "Working with Text Files"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.56: Reading & Writing Binary Files](Lesson-1.1.56-Reading-Writing-Binary-Files.md)
 

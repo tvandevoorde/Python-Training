@@ -1,5 +1,7 @@
 # Lesson 4.3.26: Monitoring and Cost - Part 26
 
+> Previous Lesson: [Lesson 4.3.25: MILESTONE TEST: 4.3 Production LLM Systems Module 1](Lesson-4.3.25-MILESTONE-TEST-4-3-Production-LLM-Systems-Module-1.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 4.3.25 | **Topic**: 4.3 Production LLM Systems (Monitoring and Cost)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical LLM production workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Monitoring and Cost - Part 26 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -83,6 +92,29 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Define service-level targets for Monitoring and Cost - Part 26 (latency, error rate).
+2. Validate request inputs before business logic.
+3. Return structured responses for observability.
+4. Log one key metric per request path.
+
+```python
+from dataclasses import dataclass
+
+LESSON_ID = "4.3.26"
+LESSON_TOPIC = "Monitoring and Cost - Part 26"
+
+@dataclass
+class Request:
+    text: str
+
+def handle_request(req: Request) -> dict[str, str]:
+    if not req.text.strip():
+        raise ValueError("text must not be empty")
+    return {"status": "ok", "preview": req.text[:40]}
+```
 
 ## Exercises
 
@@ -205,3 +237,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 4.3.27: RAG Systems - Part 27** when ready.
+
+---

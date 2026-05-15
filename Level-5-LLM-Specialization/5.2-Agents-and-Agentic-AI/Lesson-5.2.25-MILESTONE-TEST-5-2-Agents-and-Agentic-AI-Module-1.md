@@ -1,5 +1,7 @@
 # Lesson 5.2.25: MILESTONE TEST: 5.2 Agents and Agentic AI Module 1
 
+> Previous Lesson: [Lesson 5.2.24: Mini-Project: Multi-Agent Collaboration Workflow](Lesson-5.2.24-Mini-Project-Multi-Agent-Collaboration-Workflow.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 5.2.24 | **Topic**: Assessment - 5.2 Agents and Agentic AI
 
@@ -72,6 +74,36 @@ Build a mini end-to-end workflow with evaluation.
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Write a strict plan-execute-observe loop for MILESTONE TEST: 5.2 Agents and Agentic AI Module 1.
+2. Keep tool interfaces small and typed.
+3. Validate tool outputs before feeding them back to the agent.
+4. Add a max-step guard to avoid runaway loops.
+
+```python
+LESSON_ID = "5.2.25"
+LESSON_TOPIC = "Assessment - 5.2 Agents and Agentic AI"
+
+def agent_step(state: dict[str, int]) -> dict[str, int]:
+    state["steps"] = state.get("steps", 0) + 1
+    if state["steps"] > 5:
+        raise RuntimeError("max agent steps exceeded")
+    state["status"] = 1
+    return state
+
+print(agent_step({"steps": 0}))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 5.2.26: Tool Calling - Part 26](Lesson-5.2.26-Tool-Calling-Part-26.md)
+
 ## Next Lesson Preview
 
 **Lesson 5.2.26: Tool Calling - Part 26**
@@ -82,3 +114,33 @@ Build a mini end-to-end workflow with evaluation.
 **Milestone Complete.**
 
 Proceed to **Lesson 5.2.26: Tool Calling - Part 26** when ready.
+
+---
+
+## Learning Objectives
+
+By the end of this lesson, you will be able to:
+- Explain the key idea behind MILESTONE TEST: 5.2 Agents and Agentic AI Module 1
+- Implement a small practical example
+- Identify one common failure mode and fix
+
+---
+
+## Introduction: Why This Matters
+
+MILESTONE TEST: 5.2 Agents and Agentic AI Module 1 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+

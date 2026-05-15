@@ -1,5 +1,7 @@
 # Lesson 1.2.19: Eigenvalues and Eigenvectors
 
+> Previous Lesson: [Lesson 1.2.18: Orthogonal Bases and Gram-Schmidt](Lesson-1.2.18-Orthogonal-Bases-and-Gram-Schmidt.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.2.18 | **Topic**: Linear Algebra Foundations
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Interpret eigen directions geometrically
 - Compute eigenpairs with NumPy
 - Explain why eigenpairs matter in ML
+
+---
+
+## Introduction: Why This Matters
+
+Eigenvalues and Eigenvectors matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -46,6 +55,25 @@ print(vals, vecs)
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Define the retrieval objective for Eigenvalues and Eigenvectors (precision vs recall).
+2. Start with a small curated document set and deterministic chunking.
+3. Retrieve top-k candidates, then rerank before generation.
+4. Log source chunks with the final answer for traceability.
+
+```python
+LESSON_ID = "1.2.19"
+LESSON_TOPIC = "Linear Algebra Foundations"
+
+def retrieve_top_k(query: str, docs: list[str], k: int = 2) -> list[str]:
+    ranked = sorted(docs, key=lambda d: query.lower() in d.lower(), reverse=True)
+    return ranked[:k]
+
+chunks = ["LLM inference uses KV cache.", "Pandas handles tabular data."]
+print(retrieve_top_k("inference", chunks, k=1))
+```
 
 ## Exercises
 
@@ -139,3 +167,4 @@ Proceed to **Lesson 1.2.20** when ready.
 
 
 
+---

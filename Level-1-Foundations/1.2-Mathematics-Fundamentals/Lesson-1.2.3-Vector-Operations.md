@@ -1,5 +1,7 @@
 # Lesson 1.2.3: Vector Operations
 
+> Previous Lesson: [Lesson 1.2.2: Vector Basics and Notation](Lesson-1.2.2-Vector-Basics-and-Notation.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 1.2.2 | **Topic**: Linear Algebra Foundations
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Scale vectors by a scalar
 - Apply vector operations in NumPy
 - Interpret vector operations geometrically
+
+---
+
+## Introduction: Why This Matters
+
+Vector Operations matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -83,6 +92,25 @@ print(combined)
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Define the retrieval objective for Vector Operations (precision vs recall).
+2. Start with a small curated document set and deterministic chunking.
+3. Retrieve top-k candidates, then rerank before generation.
+4. Log source chunks with the final answer for traceability.
+
+```python
+LESSON_ID = "1.2.3"
+LESSON_TOPIC = "Linear Algebra Foundations"
+
+def retrieve_top_k(query: str, docs: list[str], k: int = 2) -> list[str]:
+    ranked = sorted(docs, key=lambda d: query.lower() in d.lower(), reverse=True)
+    return ranked[:k]
+
+chunks = ["LLM inference uses KV cache.", "Pandas handles tabular data."]
+print(retrieve_top_k("inference", chunks, k=1))
+```
 
 ## Exercises
 
@@ -202,3 +230,4 @@ Proceed to **Lesson 1.2.4** when ready.
 
 
 
+---

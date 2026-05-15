@@ -1,5 +1,7 @@
 # Lesson 2.4.20: Business Problem Framing - Part 20
 
+> Previous Lesson: [Lesson 2.4.19: Kaggle Competition Workflow - Part 19](Lesson-2.4.19-Kaggle-Competition-Workflow-Part-19.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 2.4.19 | **Topic**: 2.4 Capstone Projects (Business Problem Framing)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical machine learning workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate your implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Business Problem Framing - Part 20 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -89,6 +98,26 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Business Problem Framing - Part 20.
+2. Implement the smallest working version for: 2.4 Capstone Projects (Business Problem Framing).
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "2.4.20"
+LESSON_TOPIC = "Business Problem Framing - Part 20"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
 
 ## Exercises
 
@@ -212,3 +241,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 2.4.21: Project Delivery - Part 21** when ready.
+
+---

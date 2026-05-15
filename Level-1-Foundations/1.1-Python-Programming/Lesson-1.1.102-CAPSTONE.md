@@ -1,5 +1,7 @@
 # Lesson 1.1.102: CAPSTONE PROJECT Testing Best Practices
 
+> Previous Lesson: [Lesson 1.1.101: Advanced Testing Patterns](Lesson-1.1.101-Advanced-Testing.md)
+
 **Estimated Time**: 10 hours | **Difficulty**: Advanced  
 **Prerequisites**: All Topic 10 lessons (1.1.98-1.1.101)
 
@@ -12,6 +14,13 @@
 3. **Apply** best practices
 4. **Test** real applications
 5. **Achieve** professional testing
+
+---
+
+## Introduction: Why This Matters
+
+CAPSTONE PROJECT Testing Best Practices matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -333,23 +342,6 @@ pytest -v test_orders.py
 - [ ] Assertions specific
 - [ ] Documentation clear
 
----
-
-## Best Practices Summary
-
-1. **Test Organization**: Group related tests in classes
-2. **Fixtures**: Use fixtures for setup and teardown
-3. **Naming**: Descriptive test names (test_*)
-4. **Coverage**: Aim for 80%+ code coverage
-5. **Independence**: Tests should not depend on each other
-6. **Edge Cases**: Test boundaries and error conditions
-7. **Documentation**: Clear assertions and comments
-8. **Parametrization**: Use parametrize for multiple cases
-9. **Mocking**: Mock external dependencies
-10. **Continuous**: Run tests automatically
-
----
-
 ## Self-Assessment
 
 - [ ] I build comprehensive test suites
@@ -383,4 +375,48 @@ You have completed comprehensive Python training covering:
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: CAPSTONE PROJECT Testing Best Practices.
+2. Implement the smallest working version for: CAPSTONE PROJECT Testing Best Practices.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.102"
+LESSON_TOPIC = "CAPSTONE PROJECT Testing Best Practices"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Sublevel Index](CURRICULUM-INDEX.md)
 

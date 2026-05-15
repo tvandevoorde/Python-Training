@@ -1,5 +1,7 @@
 # Lesson 1.1.60: Mini-Project: Data Importer
 
+> Previous Lesson: [Lesson 1.1.59: Paths & pathlib](Lesson-1.1.59-Paths-pathlib.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: All Topic 5 lessons (1.1.52-1.1.59)
 
@@ -17,6 +19,13 @@ By the end of this lesson, you will:
 6. Generate reports and outputs
 7. Implement error handling for real-world scenarios
 8. Write production-quality file handling code
+
+---
+
+## Introduction: Why This Matters
+
+Mini-Project: Data Importer matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -520,9 +529,39 @@ Submit:
 
 ---
 
-**Next Lesson**: [1.1.61 - MILESTONE TEST: File I/O](Lesson-1.1.61-MILESTONE-TEST-File-IO.md)  
 **Previous Lesson**: [1.1.59 - Paths & pathlib](Lesson-1.1.59-Paths-pathlib.md)
 
 
 
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Mini-Project: Data Importer.
+2. Implement the smallest working version for: Mini-Project: Data Importer.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.60"
+LESSON_TOPIC = "Mini-Project: Data Importer"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.61: MILESTONE TEST: File I/O](Lesson-1.1.61-MILESTONE-TEST-File-IO.md)
 

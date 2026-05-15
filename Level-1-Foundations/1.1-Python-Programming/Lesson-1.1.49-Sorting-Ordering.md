@@ -1,5 +1,7 @@
 # Lesson 1.1.48: Sorting & Ordering
 
+> Previous Lesson: [Lesson 1.1.48: Choosing the Right Data Structure](Lesson-1.1.48-Choosing-Right-Data-Structure.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Advanced  
 **Prerequisites**: Lessons 1.1.39-1.1.47 (Collections and data structures)
 
@@ -15,6 +17,13 @@ By the end of this lesson, you will be able to:
 - Understand sorting algorithms
 - Optimize sorting performance
 - Handle edge cases in sorting
+
+---
+
+## Introduction: Why This Matters
+
+Sorting & Ordering matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -470,4 +479,35 @@ by_salary = sorter.sort_by_custom(
 
 
 
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Sorting & Ordering.
+2. Implement the smallest working version for: Sorting & Ordering.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.49"
+LESSON_TOPIC = "Sorting & Ordering"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.50: Mini-Project: Data Organizer](Lesson-1.1.50-Mini-Project-Data-Organizer.md)
 

@@ -1,5 +1,7 @@
 # Lesson 1.2.37: Gradient Descent Basics
 
+> Previous Lesson: [Lesson 1.2.36: Optimization Intuition](Lesson-1.2.36-Optimization-Intuition.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.2.36 | **Topic**: Calculus for ML
 
@@ -15,12 +17,40 @@ By the end of this lesson, you will be able to:
 
 ---
 
+## Introduction: Why This Matters
+
+Gradient Descent Basics matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
+
+---
+
 ## Core Ideas
 
 - Update rule: x = x - alpha * grad
 - Repeat until convergence
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. State the mathematical assumption behind Gradient Descent Basics.
+2. Verify with a tiny numeric example first.
+3. Compare analytical and computed results.
+4. Flag where rounding or scale can break intuition.
+
+```python
+from math import isclose
+
+LESSON_ID = "1.2.37"
+LESSON_TOPIC = "Gradient Descent Basics"
+
+def finite_difference_square(x: float, h: float = 1e-5) -> float:
+    return ((x + h) ** 2 - x ** 2) / h
+
+approx = finite_difference_square(3.0)
+exact = 2 * 3.0
+assert isclose(approx, exact, rel_tol=1e-3)
+```
 
 ## Exercises
 
@@ -105,4 +135,17 @@ Proceed to **Lesson 1.2.38** when ready.
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
 

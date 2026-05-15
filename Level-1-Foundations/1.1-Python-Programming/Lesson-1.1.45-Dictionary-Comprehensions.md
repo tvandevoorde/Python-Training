@@ -1,5 +1,7 @@
 # Lesson 1.1.44: Dictionary Comprehensions
 
+> Previous Lesson: [Lesson 1.1.44: Dictionary Iteration & Operations](Lesson-1.1.44-Dictionary-Iteration-Operations.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lessons 1.1.41 and 1.1.43 (Dictionaries)
 
@@ -15,6 +17,13 @@ By the end of this lesson, you will be able to:
 - Combine multiple data sources into dictionaries
 - Use conditional comprehensions
 - Create nested dictionary structures
+
+---
+
+## Introduction: Why This Matters
+
+Dictionary Comprehensions matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -377,4 +386,35 @@ print(by_product)  # {'A': 300, 'B': 270}
 
 
 
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Dictionary Comprehensions.
+2. Implement the smallest working version for: Dictionary Comprehensions.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.45"
+LESSON_TOPIC = "Dictionary Comprehensions"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.46: Sets & Set Operations](Lesson-1.1.46-Sets-Operations.md)
 

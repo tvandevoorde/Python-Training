@@ -1,5 +1,7 @@
 # Lesson 1.4.3: Dataset Sourcing and Access Patterns
 
+> Previous Lesson: [Lesson 1.4.2: Project Scoping and Problem Statements](Lesson-1.4.2-Project-Scoping-and-Problem-Statements.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 1.4.2 | **Topic**: Project Foundations
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical component for an end-to-end project
 - Validate outputs and handle common failure modes
 - Document implementation choices clearly
+
+---
+
+## Introduction: Why This Matters
+
+Dataset Sourcing and Access Patterns matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -89,6 +98,26 @@ print(source)
 `
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Dataset Sourcing and Access Patterns.
+2. Implement the smallest working version for: Project Foundations.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.4.3"
+LESSON_TOPIC = "Dataset Sourcing and Access Patterns"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
 
 ## Exercises
 
@@ -208,3 +237,5 @@ def summarize_by_key(df: pd.DataFrame, key: str, value: str) -> pd.DataFrame:
 **Lesson Complete.**
 
 Proceed to **Lesson 1.4.4: Data Contracts and Validation Rules** when ready.
+
+---

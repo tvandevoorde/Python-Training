@@ -1,5 +1,7 @@
 # Lesson 1.1.19: Loop Debugging & Optimization
 
+> Previous Lesson: [Lesson 1.1.18: Advanced Loop Patterns](Lesson-1.1.18-Advanced-Loop-Patterns.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate-Advanced  
 **Prerequisites**: Lesson 1.1.18 (Advanced Patterns) | **Topic**: Loops - Troubleshooting & Performance
 
@@ -13,6 +15,13 @@ By the end of this lesson, you will be able to:
 - Optimize loops for performance
 - Understand time complexity
 - Apply debugging techniques systematically
+
+---
+
+## Introduction: Why This Matters
+
+Loop Debugging & Optimization matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -543,6 +552,33 @@ print(f"\nFastest is {time3/time2:.1f}x faster than append")
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Define expected behavior for: Loop Debugging & Optimization.
+2. Add one happy-path and one edge-case test.
+3. Assert exact output and clear error messages.
+4. Keep test names explicit and focused on one behavior.
+
+```python
+LESSON_ID = "1.1.19"
+LESSON_TOPIC = "Loop Debugging & Optimization"
+
+def parse_positive(value: str) -> int:
+    number = int(value)
+    if number <= 0:
+        raise ValueError("value must be positive")
+    return number
+
+def test_parse_positive_returns_int() -> None:
+    assert parse_positive("5") == 5
+
+def test_parse_positive_rejects_zero() -> None:
+    try:
+        parse_positive("0")
+    except ValueError as exc:
+        assert "positive" in str(exc)
+```
+
 ## Exercises
 
 ### Difficulty 1: Starter 🟩
@@ -820,3 +856,4 @@ Proceed to **Lesson 1.1.20** (final Topic 2 lesson) when you're ready.
 
 
 
+---

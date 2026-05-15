@@ -1,5 +1,7 @@
 # Lesson 1.1.52: File I/O Basics
 
+> Previous Lesson: [Lesson 1.1.51: MILESTONE TEST - Data Structures](Lesson-1.1.51-Milestone-Test-Data-Structures.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.1.27 (Return Values), Lesson 1.1.39 (Lists)
 
@@ -17,6 +19,13 @@ By the end of this lesson, you will:
 6. Avoid common file handling mistakes (unclosed files, encoding errors)
 7. Work with different file encodings (UTF-8, ASCII, etc.)
 8. Implement proper error handling when working with files
+
+---
+
+## Introduction: Why This Matters
+
+File I/O Basics matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -384,9 +393,39 @@ with open("summary.txt", "w") as f:
 
 ---
 
-**Next Lesson**: [1.1.53 - Reading Files](Lesson-1.1.53-Reading-Files.md)  
 **Previous Lesson**: [1.1.51 - MILESTONE TEST: Data Structures](Lesson-1.1.51-Milestone-Test-Data-Structures.md)
 
 
 
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: File I/O Basics.
+2. Implement the smallest working version for: File I/O Basics.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.52"
+LESSON_TOPIC = "File I/O Basics"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.53: Reading Files](Lesson-1.1.53-Reading-Files.md)
 

@@ -1,5 +1,7 @@
 # Lesson 5.2.16: Multi-Agent Collaboration - Part 16
 
+> Previous Lesson: [Lesson 5.2.15: LlamaIndex Workflows - Part 15](Lesson-5.2.15-LlamaIndex-Workflows-Part-15.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 5.2.15 | **Topic**: 5.2 Agents and Agentic AI (Multi-Agent Collaboration)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical agentic AI workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Multi-Agent Collaboration - Part 16 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -88,6 +97,27 @@ print("hallucination_rate", hallucination_rate)
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Write a strict plan-execute-observe loop for Multi-Agent Collaboration - Part 16.
+2. Keep tool interfaces small and typed.
+3. Validate tool outputs before feeding them back to the agent.
+4. Add a max-step guard to avoid runaway loops.
+
+```python
+LESSON_ID = "5.2.16"
+LESSON_TOPIC = "5.2 Agents and Agentic AI (Multi-Agent Collaboration)"
+
+def agent_step(state: dict[str, int]) -> dict[str, int]:
+    state["steps"] = state.get("steps", 0) + 1
+    if state["steps"] > 5:
+        raise RuntimeError("max agent steps exceeded")
+    state["status"] = 1
+    return state
+
+print(agent_step({"steps": 0}))
+```
 
 ## Exercises
 
@@ -206,3 +236,5 @@ def evaluate_scores(quality: float, stability: float) -> dict[str, float]:
 **Lesson Complete.**
 
 Proceed to **Lesson 5.2.17: Agent Loop Design - Part 17** when ready.
+
+---

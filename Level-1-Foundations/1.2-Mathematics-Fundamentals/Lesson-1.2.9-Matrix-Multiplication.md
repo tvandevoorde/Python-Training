@@ -1,5 +1,7 @@
 # Lesson 1.2.9: Matrix Multiplication
 
+> Previous Lesson: [Lesson 1.2.8: Matrix Operations](Lesson-1.2.8-Matrix-Operations.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.2.8 | **Topic**: Linear Algebra Foundations
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Compute matrix products by hand
 - Use NumPy for matrix multiplication
 - Interpret matrix multiplication as composition
+
+---
+
+## Introduction: Why This Matters
+
+Matrix Multiplication matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -85,6 +94,26 @@ print(T @ v)
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Start from a tiny sample that reflects Linear Algebra Foundations.
+2. Make transformations explicit (no hidden in-place side effects).
+3. Validate schema assumptions after each step.
+4. Save intermediate outputs for debugging reproducibility.
+
+```python
+import pandas as pd
+
+LESSON_ID = "1.2.9"
+LESSON_TOPIC = "Linear Algebra Foundations"
+frame = pd.DataFrame({"value": [10, None, 30]})
+clean = frame.copy()
+clean["value"] = clean["value"].fillna(clean["value"].median())
+
+assert "value" in clean.columns
+assert clean["value"].isna().sum() == 0
+```
 
 ## Exercises
 
@@ -205,3 +234,4 @@ Proceed to **Lesson 1.2.10** when ready.
 
 
 
+---

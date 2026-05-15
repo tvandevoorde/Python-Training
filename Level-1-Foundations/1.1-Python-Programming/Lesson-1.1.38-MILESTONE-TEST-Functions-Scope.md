@@ -1,5 +1,7 @@
 # Lesson 1.1.38: MILESTONE TEST – Functions & Scope
 
+> Previous Lesson: [Lesson 1.1.37: Mini-Project: Function Library](Lesson-1.1.37-Mini-Project-Function-Library.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lessons 1.1.24–1.1.37 (Complete Functions & Scope topic)  
 **Assessment Type**: Comprehensive Exam + Project Review
@@ -18,6 +20,13 @@ By the end of this assessment, you will have demonstrated:
 6. **Code Quality**: Write pure functions that are testable and maintainable
 7. **Error Handling**: Validate inputs and provide meaningful feedback
 8. **Integration**: Combine concepts into cohesive projects
+
+---
+
+## Introduction: Why This Matters
+
+MILESTONE TEST – Functions & Scope matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -567,4 +576,48 @@ Once you've passed this assessment, you're ready for:
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: MILESTONE TEST – Functions & Scope.
+2. Implement the smallest working version for: MILESTONE TEST – Functions & Scope.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.38"
+LESSON_TOPIC = "MILESTONE TEST – Functions & Scope"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.39: Lists Fundamentals](Lesson-1.1.39-Lists-Fundamentals.md)
 

@@ -1,5 +1,7 @@
 # Lesson 1.1.25: Return Values & Returning Data
 
+> Previous Lesson: [Lesson 1.1.24: Scope & Namespaces](Lesson-1.1.24-Scope-and-Namespaces.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.1.24 (Scope & Namespaces) | **Topic**: Functions - Return Values
 
@@ -14,6 +16,13 @@ By the end of this lesson, you will be able to:
 - Understand None as default return value
 - Use early returns for clean code
 - Apply return value patterns effectively
+
+---
+
+## Introduction: Why This Matters
+
+Return Values & Returning Data matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -500,6 +509,26 @@ print(f"\nStats: count={count}, avg={avg}")
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Return Values & Returning Data.
+2. Implement the smallest working version for: Functions - Return Values.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.25"
+LESSON_TOPIC = "Return Values & Returning Data"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
 ## Exercises
 
 ### Difficulty 1: Starter 🟩
@@ -778,3 +807,4 @@ Proceed to **Lesson 1.1.26** when you're ready.
 
 
 
+---

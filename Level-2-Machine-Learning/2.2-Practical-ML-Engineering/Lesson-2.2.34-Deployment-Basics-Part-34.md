@@ -1,5 +1,7 @@
 # Lesson 2.2.34: Deployment Basics - Part 34
 
+> Previous Lesson: [Lesson 2.2.33: Model Diagnostics - Part 33](Lesson-2.2.33-Model-Diagnostics-Part-33.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 2.2.33 | **Topic**: 2.2 Practical ML Engineering (Deployment Basics)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical machine learning workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate your implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Deployment Basics - Part 34 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -89,6 +98,29 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Define service-level targets for Deployment Basics - Part 34 (latency, error rate).
+2. Validate request inputs before business logic.
+3. Return structured responses for observability.
+4. Log one key metric per request path.
+
+```python
+from dataclasses import dataclass
+
+LESSON_ID = "2.2.34"
+LESSON_TOPIC = "Deployment Basics - Part 34"
+
+@dataclass
+class Request:
+    text: str
+
+def handle_request(req: Request) -> dict[str, str]:
+    if not req.text.strip():
+        raise ValueError("text must not be empty")
+    return {"status": "ok", "preview": req.text[:40]}
+```
 
 ## Exercises
 
@@ -212,3 +244,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 2.2.35: Monitoring and Reliability - Part 35** when ready.
+
+---

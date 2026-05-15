@@ -1,5 +1,7 @@
 # Lesson 4.1.48: Mini-Project: Perplexity and Evaluation Workflow
 
+> Previous Lesson: [Lesson 4.1.47: Scaling Laws - Part 47](Lesson-4.1.47-Scaling-Laws-Part-47.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 4.1.47 | **Topic**: 4.1 LLM Architecture and Theory (Perplexity and Evaluation)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical LLM system workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Mini-Project: Perplexity and Evaluation Workflow matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -83,6 +92,28 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Write a clear task contract for 4.1 LLM Architecture and Theory (Perplexity and Evaluation).
+2. Keep prompts constrained (role, input, output schema).
+3. Add one grounding or retrieval check before generation.
+4. Track quality and hallucination metrics per run.
+
+```python
+LESSON_ID = "4.1.48"
+LESSON_TOPIC = "4.1 LLM Architecture and Theory (Perplexity and Evaluation)"
+
+def build_prompt(user_question: str, context: str) -> str:
+    if not context.strip():
+        raise ValueError("context is required for grounded output")
+    return (
+        "You are a precise assistant.\\n"
+        f"Context: {context}\\n"
+        f"Question: {user_question}\\n"
+        "Answer with 3 concise bullet points."
+    )
+```
 
 ## Exercises
 
@@ -205,3 +236,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 4.1.49: Transformer Internals - Part 49** when ready.
+
+---

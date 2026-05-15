@@ -1,5 +1,7 @@
 # Lesson 1.1.68: Writing Defensive Code
 
+> Previous Lesson: [Lesson 1.1.67: Context Managers](Lesson-1.1.67-Context-Managers.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lessons 1.1.62-1.1.67
 
@@ -14,6 +16,13 @@
 5. **Provide** meaningful error messages
 6. **Design** robust functions
 7. **Handle** edge cases systematically
+
+---
+
+## Introduction: Why This Matters
+
+Writing Defensive Code matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -318,4 +327,48 @@ def parse_datetime(date_str):
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Writing Defensive Code.
+2. Implement the smallest working version for: Writing Defensive Code.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.68"
+LESSON_TOPIC = "Writing Defensive Code"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.69: Debugging with Exceptions](Lesson-1.1.69-Debugging-with-Exceptions.md)
 

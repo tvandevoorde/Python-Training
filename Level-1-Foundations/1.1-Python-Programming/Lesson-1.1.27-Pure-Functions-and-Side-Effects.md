@@ -1,5 +1,7 @@
 # Lesson 1.1.27: Pure Functions & Side Effects
 
+> Previous Lesson: [Lesson 1.1.26: Lambda Functions & Anonymous Functions](Lesson-1.1.26-Lambda-Functions-and-Anonymous-Functions.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.1.26 (Lambda Functions) | **Topic**: Functions - Purity & Effects
 
@@ -14,6 +16,13 @@ By the end of this lesson, you will be able to:
 - Write pure functions where possible
 - Manage side effects responsibly
 - Apply functional programming principles
+
+---
+
+## Introduction: Why This Matters
+
+Pure Functions & Side Effects matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -557,6 +566,26 @@ if __name__ == '__main__':
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Pure Functions & Side Effects.
+2. Implement the smallest working version for: Functions - Purity & Effects.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.27"
+LESSON_TOPIC = "Pure Functions & Side Effects"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
 ## Exercises
 
 ### Difficulty 1: Starter 🟩
@@ -797,3 +826,4 @@ Proceed to **Lesson 1.1.28** when you're ready.
 
 
 
+---

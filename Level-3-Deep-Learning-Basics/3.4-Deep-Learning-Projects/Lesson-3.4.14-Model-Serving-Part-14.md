@@ -1,5 +1,7 @@
 # Lesson 3.4.14: Model Serving - Part 14
 
+> Previous Lesson: [Lesson 3.4.13: Experiment Tracking - Part 13](Lesson-3.4.13-Experiment-Tracking-Part-13.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 3.4.13 | **Topic**: 3.4 Deep Learning Projects (Model Serving)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical deep learning project workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Model Serving - Part 14 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -83,6 +92,25 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Set explicit SLOs for Model Serving - Part 14 (p95 latency, throughput).
+2. Benchmark with realistic batch sizes and prompt lengths.
+3. Enable caching and measure hit-rate impact.
+4. Add overload protection before production rollout.
+
+```python
+LESSON_ID = "3.4.14"
+LESSON_TOPIC = "3.4 Deep Learning Projects (Model Serving)"
+
+def estimate_tokens_per_second(tokens: int, seconds: float) -> float:
+    if seconds <= 0:
+        raise ValueError("seconds must be > 0")
+    return tokens / seconds
+
+print(estimate_tokens_per_second(1200, 2.4))
+```
 
 ## Exercises
 
@@ -205,3 +233,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 3.4.15: Kaggle DL Workflow - Part 15** when ready.
+
+---

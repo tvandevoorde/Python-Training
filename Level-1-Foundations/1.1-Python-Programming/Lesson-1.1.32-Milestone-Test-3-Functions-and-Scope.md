@@ -1,5 +1,7 @@
 # Lesson 1.1.32: Milestone Test 3 - Functions & Scope
 
+> Previous Lesson: [Lesson 1.1.31: Functions Capstone Project](Lesson-1.1.31-Functions-Capstone-Project.md)
+
 **Estimated Time**: 8 hours (90 min test + review) | **Difficulty**: Comprehensive  
 **Prerequisites**: Lessons 1.1.24-1.1.31 | **Topic**: Assessment - Functions Mastery
 
@@ -554,4 +556,64 @@ Proceed to **Lesson 1.1.33: Topic 4 - Data Structures** when ready.
 
 
 
+
+---
+
+## Learning Objectives
+
+By the end of this lesson, you will be able to:
+- Explain the key idea behind Milestone Test 3 - Functions & Scope
+- Implement a small practical example
+- Identify one common failure mode and fix
+
+---
+
+## Introduction: Why This Matters
+
+Milestone Test 3 - Functions & Scope matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Milestone Test 3 - Functions & Scope.
+2. Implement the smallest working version for: Assessment - Functions Mastery.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.32"
+LESSON_TOPIC = "Milestone Test 3 - Functions & Scope"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.33: Recursion Basics](Lesson-1.1.33-Recursion-Basics.md)
 

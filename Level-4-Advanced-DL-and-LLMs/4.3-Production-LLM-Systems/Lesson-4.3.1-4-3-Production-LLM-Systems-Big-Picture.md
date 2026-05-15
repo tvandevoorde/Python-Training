@@ -1,5 +1,7 @@
 # Lesson 4.3.1: 4.3 Production LLM Systems: Big Picture
 
+> Previous Lesson: [Sublevel Index](CURRICULUM-INDEX.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Sublevel .2 completion | **Topic**: 4.3 Production LLM Systems (Inference Optimization)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical LLM production workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+4.3 Production LLM Systems: Big Picture matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -83,6 +92,25 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Set explicit SLOs for 4.3 Production LLM Systems: Big Picture (p95 latency, throughput).
+2. Benchmark with realistic batch sizes and prompt lengths.
+3. Enable caching and measure hit-rate impact.
+4. Add overload protection before production rollout.
+
+```python
+LESSON_ID = "4.3.1"
+LESSON_TOPIC = "4.3 Production LLM Systems (Inference Optimization)"
+
+def estimate_tokens_per_second(tokens: int, seconds: float) -> float:
+    if seconds <= 0:
+        raise ValueError("seconds must be > 0")
+    return tokens / seconds
+
+print(estimate_tokens_per_second(1200, 2.4))
+```
 
 ## Exercises
 
@@ -205,3 +233,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 4.3.2: Quantization - Part 2** when ready.
+
+---

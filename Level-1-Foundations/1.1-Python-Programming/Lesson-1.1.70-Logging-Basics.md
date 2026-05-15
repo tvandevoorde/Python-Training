@@ -1,5 +1,7 @@
 # Lesson 1.1.70: Logging Basics
 
+> Previous Lesson: [Lesson 1.1.69: Debugging with Exceptions](Lesson-1.1.69-Debugging-with-Exceptions.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **prerequisites**: Lessons 1.1.62-1.1.69
 
@@ -14,6 +16,13 @@
 5. **Write** logs to files
 6. **Understand** logging best practices
 7. **Implement** productive logging strategy
+
+---
+
+## Introduction: Why This Matters
+
+Logging Basics matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -308,4 +317,51 @@ except ZeroDivisionError:
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Define service-level targets for Logging Basics (latency, error rate).
+2. Validate request inputs before business logic.
+3. Return structured responses for observability.
+4. Log one key metric per request path.
+
+```python
+from dataclasses import dataclass
+
+LESSON_ID = "1.1.70"
+LESSON_TOPIC = "Logging Basics"
+
+@dataclass
+class Request:
+    text: str
+
+def handle_request(req: Request) -> dict[str, str]:
+    if not req.text.strip():
+        raise ValueError("text must not be empty")
+    return {"status": "ok", "preview": req.text[:40]}
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.71: Error Handling Patterns](Lesson-1.1.71-Error-Handling-Patterns.md)
 

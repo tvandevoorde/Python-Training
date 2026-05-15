@@ -1,5 +1,7 @@
 # Lesson 1.2.6: Projections and Orthogonality
 
+> Previous Lesson: [Lesson 1.2.5: Vector Norms and Distance](Lesson-1.2.5-Vector-Norms-and-Distance.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.2.5 | **Topic**: Linear Algebra Foundations
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Compute vector projections
 - Interpret projections geometrically
 - Use projection concepts in ML
+
+---
+
+## Introduction: Why This Matters
+
+Projections and Orthogonality matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -89,6 +98,27 @@ print(projections)
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. State the mathematical assumption behind Projections and Orthogonality.
+2. Verify with a tiny numeric example first.
+3. Compare analytical and computed results.
+4. Flag where rounding or scale can break intuition.
+
+```python
+from math import isclose
+
+LESSON_ID = "1.2.6"
+LESSON_TOPIC = "Projections and Orthogonality"
+
+def finite_difference_square(x: float, h: float = 1e-5) -> float:
+    return ((x + h) ** 2 - x ** 2) / h
+
+approx = finite_difference_square(3.0)
+exact = 2 * 3.0
+assert isclose(approx, exact, rel_tol=1e-3)
+```
 
 ## Exercises
 
@@ -209,3 +239,4 @@ Proceed to **Lesson 1.2.7** when ready.
 
 
 
+---

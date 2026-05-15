@@ -1,5 +1,7 @@
 # Lesson 2.1.67: Feature Engineering - Part 67
 
+> Previous Lesson: [Lesson 2.1.66: Data Splitting - Part 66](Lesson-2.1.66-Data-Splitting-Part-66.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 2.1.66 | **Topic**: 2.1 ML Fundamentals and Algorithms (Feature Engineering)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical machine learning workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate your implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Feature Engineering - Part 67 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -89,6 +98,24 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Define target metric and baseline model for Feature Engineering - Part 67.
+2. Split data before any transformation to avoid leakage.
+3. Use a pipeline so preprocessing and modeling are coupled.
+4. Report both score and key error cases.
+
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+
+LESSON_ID = "2.1.67"
+LESSON_TOPIC = "2.1 ML Fundamentals and Algorithms (Feature Engineering)"
+y_true = [1, 0, 1, 1]
+y_pred = [1, 0, 0, 1]
+print(accuracy_score(y_true, y_pred))
+```
 
 ## Exercises
 
@@ -212,3 +239,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 2.1.68: Regression Models - Part 68** when ready.
+
+---

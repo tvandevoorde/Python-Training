@@ -1,5 +1,7 @@
 # Lesson 1.1.75: Classes & Objects
 
+> Previous Lesson: [Lesson 1.1.74: MILESTONE TEST – Error Handling](Lesson-1.1.74-MILESTONE-TEST-Error-Handling.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate-Advanced  
 **Prerequisites**: Lesson 1.1.24 (Function Basics), Lesson 1.1.28 (Scope)
 
@@ -17,6 +19,13 @@ By the end of this lesson, you will:
 6. Manage instance state
 7. Design effective classes
 8. Apply OOP to real-world problems
+
+---
+
+## Introduction: Why This Matters
+
+Classes & Objects matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -312,9 +321,39 @@ Create `Product`, `Cart`, and `Order` classes for shopping system.
 
 ---
 
-**Next Lesson**: [1.1.76 - Instance Variables & Methods](Lesson-1.1.76-Instance-Variables-Methods.md)  
 **Previous Lesson**: [1.1.61 - MILESTONE TEST: File I/O](Lesson-1.1.61-MILESTONE-TEST-File-IO.md)
 
 
 
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Classes & Objects.
+2. Implement the smallest working version for: Classes & Objects.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.75"
+LESSON_TOPIC = "Classes & Objects"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.76: Instance Variables & Methods](Lesson-1.1.76-Instance-Variables-Methods.md)
 

@@ -1,5 +1,7 @@
 # Lesson 1.2.4: Dot Product and Angle
 
+> Previous Lesson: [Lesson 1.2.3: Vector Operations](Lesson-1.2.3-Vector-Operations.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 1.2.3 | **Topic**: Linear Algebra Foundations
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Interpret the dot product geometrically
 - Use dot product to measure similarity
 - Relate dot product to angle between vectors
+
+---
+
+## Introduction: Why This Matters
+
+Dot Product and Angle matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -84,6 +93,27 @@ print(cos_sim)  # 1.0
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. State the mathematical assumption behind Dot Product and Angle.
+2. Verify with a tiny numeric example first.
+3. Compare analytical and computed results.
+4. Flag where rounding or scale can break intuition.
+
+```python
+from math import isclose
+
+LESSON_ID = "1.2.4"
+LESSON_TOPIC = "Dot Product and Angle"
+
+def finite_difference_square(x: float, h: float = 1e-5) -> float:
+    return ((x + h) ** 2 - x ** 2) / h
+
+approx = finite_difference_square(3.0)
+exact = 2 * 3.0
+assert isclose(approx, exact, rel_tol=1e-3)
+```
 
 ## Exercises
 
@@ -203,3 +233,4 @@ Proceed to **Lesson 1.2.5** when ready.
 
 
 
+---

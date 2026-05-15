@@ -1,5 +1,7 @@
 # Lesson 1.3.51: Subplots and Layout Systems
 
+> Previous Lesson: [Lesson 1.3.50: Categorical Plots: Bar, Box, Violin](Lesson-1.3.50-Categorical-Plots-Bar-Box-Violin.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.3.50 | **Topic**: Matplotlib and Seaborn
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Apply this concept to realistic data tasks
 - Debug common mistakes and edge cases
 - Build a small reusable workflow in Python
+
+---
+
+## Introduction: Why This Matters
+
+Subplots and Layout Systems matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -90,6 +99,26 @@ print(result)
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Start from a tiny sample that reflects Matplotlib and Seaborn.
+2. Make transformations explicit (no hidden in-place side effects).
+3. Validate schema assumptions after each step.
+4. Save intermediate outputs for debugging reproducibility.
+
+```python
+import pandas as pd
+
+LESSON_ID = "1.3.51"
+LESSON_TOPIC = "Matplotlib and Seaborn"
+frame = pd.DataFrame({"value": [10, None, 30]})
+clean = frame.copy()
+clean["value"] = clean["value"].fillna(clean["value"].median())
+
+assert "value" in clean.columns
+assert clean["value"].isna().sum() == 0
+```
 
 ## Exercises
 
@@ -210,3 +239,5 @@ def grouped_stats(df: pd.DataFrame, by_col: str, value_col: str) -> pd.DataFrame
 
 Proceed to **Lesson 1.3.52: Styling Themes and Color Choices** when ready.
 ```
+
+---

@@ -1,5 +1,7 @@
 # Lesson 1.1.61: MILESTONE TEST: File I/O
 
+> Previous Lesson: [Lesson 1.1.60: Mini-Project: Data Importer](Lesson-1.1.60-Mini-Project-Data-Importer.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate-Advanced  
 **Prerequisites**: All Topic 5 lessons (1.1.52-1.1.60)
 
@@ -17,6 +19,13 @@ By the end of this milestone assessment, you will have:
 6. Integrated multiple file format skills
 7. Optimized file operations for performance
 8. Validated your readiness for advanced topics
+
+---
+
+## Introduction: Why This Matters
+
+MILESTONE TEST: File I/O matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -541,4 +550,48 @@ if __name__ == "__main__":
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: MILESTONE TEST: File I/O.
+2. Implement the smallest working version for: MILESTONE TEST: File I/O.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.61"
+LESSON_TOPIC = "MILESTONE TEST: File I/O"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.62: Exception Basics](Lesson-1.1.62-Exception-Basics.md)
 

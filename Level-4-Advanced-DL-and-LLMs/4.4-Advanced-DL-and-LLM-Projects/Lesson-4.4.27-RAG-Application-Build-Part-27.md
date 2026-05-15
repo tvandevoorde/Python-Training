@@ -1,5 +1,7 @@
 # Lesson 4.4.27: RAG Application Build - Part 27
 
+> Previous Lesson: [Lesson 4.4.26: Fine-Tuning Pipeline - Part 26](Lesson-4.4.26-Fine-Tuning-Pipeline-Part-26.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 4.4.26 | **Topic**: 4.4 Advanced DL and LLM Projects (RAG Application Build)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical LLM project workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+RAG Application Build - Part 27 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -83,6 +92,25 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Define the retrieval objective for RAG Application Build - Part 27 (precision vs recall).
+2. Start with a small curated document set and deterministic chunking.
+3. Retrieve top-k candidates, then rerank before generation.
+4. Log source chunks with the final answer for traceability.
+
+```python
+LESSON_ID = "4.4.27"
+LESSON_TOPIC = "4.4 Advanced DL and LLM Projects (RAG Application Build)"
+
+def retrieve_top_k(query: str, docs: list[str], k: int = 2) -> list[str]:
+    ranked = sorted(docs, key=lambda d: query.lower() in d.lower(), reverse=True)
+    return ranked[:k]
+
+chunks = ["LLM inference uses KV cache.", "Pandas handles tabular data."]
+print(retrieve_top_k("inference", chunks, k=1))
+```
 
 ## Exercises
 
@@ -205,3 +233,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 4.4.28: Agentic Workflow - Part 28** when ready.
+
+---

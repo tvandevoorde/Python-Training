@@ -1,5 +1,7 @@
 # Lesson 3.3.43: Positional Encoding - Part 43
 
+> Previous Lesson: [Lesson 3.3.42: Multi-Head Attention - Part 42](Lesson-3.3.42-Multi-Head-Attention-Part-42.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 3.3.42 | **Topic**: 3.3 Transformers and Attention Mechanism (Positional Encoding)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical transformer and NLP workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Positional Encoding - Part 43 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -83,6 +92,28 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Write a clear task contract for 3.3 Transformers and Attention Mechanism (Positional Encoding).
+2. Keep prompts constrained (role, input, output schema).
+3. Add one grounding or retrieval check before generation.
+4. Track quality and hallucination metrics per run.
+
+```python
+LESSON_ID = "3.3.43"
+LESSON_TOPIC = "3.3 Transformers and Attention Mechanism (Positional Encoding)"
+
+def build_prompt(user_question: str, context: str) -> str:
+    if not context.strip():
+        raise ValueError("context is required for grounded output")
+    return (
+        "You are a precise assistant.\\n"
+        f"Context: {context}\\n"
+        f"Question: {user_question}\\n"
+        "Answer with 3 concise bullet points."
+    )
+```
 
 ## Exercises
 
@@ -205,3 +236,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 3.3.44: Transformer Blocks - Part 44** when ready.
+
+---

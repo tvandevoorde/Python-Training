@@ -1,5 +1,7 @@
 # Lesson 4.2.50: MILESTONE TEST: 4.2 Fine-tuning Methodologies Module 2
 
+> Previous Lesson: [Lesson 4.2.49: QLoRA - Part 49](Lesson-4.2.49-QLoRA-Part-49.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 4.2.49 | **Topic**: Assessment - 4.2 Fine-tuning Methodologies
 
@@ -72,6 +74,34 @@ Build a mini end-to-end workflow with evaluation.
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Pick one baseline model and one fine-tuning method for MILESTONE TEST: 4.2 Fine-tuning Methodologies Module 2.
+2. Freeze all non-essential parts first (PEFT mindset).
+3. Track train/validation loss each epoch with fixed seeds.
+4. Compare quality gain against compute cost before scaling.
+
+```python
+LESSON_ID = "4.2.50"
+LESSON_TOPIC = "Assessment - 4.2 Fine-tuning Methodologies"
+
+def choose_trainable_layers(method: str) -> list[str]:
+    if method.lower() == "lora":
+        return ["q_proj", "v_proj"]
+    return ["all"]
+
+print(choose_trainable_layers("lora"))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 4.2.51: SFT - Part 51](Lesson-4.2.51-SFT-Part-51.md)
+
 ## Next Lesson Preview
 
 **Lesson 4.2.51: SFT - Part 51**
@@ -82,3 +112,33 @@ Build a mini end-to-end workflow with evaluation.
 **Milestone Complete.**
 
 Proceed to **Lesson 4.2.51: SFT - Part 51** when ready.
+
+---
+
+## Learning Objectives
+
+By the end of this lesson, you will be able to:
+- Explain the key idea behind MILESTONE TEST: 4.2 Fine-tuning Methodologies Module 2
+- Implement a small practical example
+- Identify one common failure mode and fix
+
+---
+
+## Introduction: Why This Matters
+
+MILESTONE TEST: 4.2 Fine-tuning Methodologies Module 2 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+

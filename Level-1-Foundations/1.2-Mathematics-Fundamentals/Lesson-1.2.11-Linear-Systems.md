@@ -1,5 +1,7 @@
 # Lesson 1.2.11: Linear Systems
 
+> Previous Lesson: [Lesson 1.2.10: Matrix-Vector Products](Lesson-1.2.10-Matrix-Vector-Products.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.2.10 | **Topic**: Linear Algebra Foundations
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Identify solution types (unique, infinite, none)
 - Solve small systems by hand
 - Use NumPy to solve systems
+
+---
+
+## Introduction: Why This Matters
+
+Linear Systems matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -79,6 +88,27 @@ for A, b in systems:
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. State the mathematical assumption behind Linear Systems.
+2. Verify with a tiny numeric example first.
+3. Compare analytical and computed results.
+4. Flag where rounding or scale can break intuition.
+
+```python
+from math import isclose
+
+LESSON_ID = "1.2.11"
+LESSON_TOPIC = "Linear Systems"
+
+def finite_difference_square(x: float, h: float = 1e-5) -> float:
+    return ((x + h) ** 2 - x ** 2) / h
+
+approx = finite_difference_square(3.0)
+exact = 2 * 3.0
+assert isclose(approx, exact, rel_tol=1e-3)
+```
 
 ## Exercises
 
@@ -195,3 +225,4 @@ Proceed to **Lesson 1.2.12** when ready.
 
 
 
+---

@@ -1,5 +1,7 @@
 # Lesson 1.1.87: MILESTONE TEST OOP Basics
 
+> Previous Lesson: [Lesson 1.1.86: Mini-Project Banking System](Lesson-1.1.86-Mini-Project-Banking-System.md)
+
 **Estimated Time**: 6 hours | **Difficulty**: Assessment  
 **Prerequisites**: All Topic 7 lessons (1.1.75-1.1.86)
 
@@ -323,4 +325,64 @@ print(manager.display_team())
 
 
 
+
+---
+
+## Learning Objectives
+
+By the end of this lesson, you will be able to:
+- Explain the key idea behind MILESTONE TEST OOP Basics
+- Implement a small practical example
+- Identify one common failure mode and fix
+
+---
+
+## Introduction: Why This Matters
+
+MILESTONE TEST OOP Basics matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: MILESTONE TEST OOP Basics.
+2. Implement the smallest working version for: MILESTONE TEST OOP Basics.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.87"
+LESSON_TOPIC = "MILESTONE TEST OOP Basics"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.88: Modules & Imports](Lesson-1.1.88-Modules-Imports.md)
 

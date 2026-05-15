@@ -1,5 +1,7 @@
 # Lesson 1.1.76: Instance Variables & Methods
 
+> Previous Lesson: [Lesson 1.1.75: Classes & Objects](Lesson-1.1.75-Classes-Objects.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 1.1.75 (Classes & Objects)
 
@@ -14,6 +16,13 @@
 5. **Access** instance variables
 6. **Implement** behavior specific to instances
 7. **Distinguish** instance from class variables
+
+---
+
+## Introduction: Why This Matters
+
+Instance Variables & Methods matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -133,4 +142,48 @@ print(Dog.bark(dog1))        # Rex says woof! (explicit self)
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Instance Variables & Methods.
+2. Implement the smallest working version for: Instance Variables & Methods.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.76"
+LESSON_TOPIC = "Instance Variables & Methods"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.77: Class Variables & Methods](Lesson-1.1.77-Class-Variables-Methods.md)
 

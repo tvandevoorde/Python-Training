@@ -1,5 +1,7 @@
 # Lesson 3.1.9: Debugging - Part 9
 
+> Previous Lesson: [Lesson 3.1.8: Regularization - Part 8](Lesson-3.1.8-Regularization-Part-8.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 3.1.8 | **Topic**: 3.1 Neural Networks Fundamentals (Debugging)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical deep learning workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Debugging - Part 9 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -83,6 +92,33 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Define expected behavior for: Debugging - Part 9.
+2. Add one happy-path and one edge-case test.
+3. Assert exact output and clear error messages.
+4. Keep test names explicit and focused on one behavior.
+
+```python
+LESSON_ID = "3.1.9"
+LESSON_TOPIC = "Debugging - Part 9"
+
+def parse_positive(value: str) -> int:
+    number = int(value)
+    if number <= 0:
+        raise ValueError("value must be positive")
+    return number
+
+def test_parse_positive_returns_int() -> None:
+    assert parse_positive("5") == 5
+
+def test_parse_positive_rejects_zero() -> None:
+    try:
+        parse_positive("0")
+    except ValueError as exc:
+        assert "positive" in str(exc)
+```
 
 ## Exercises
 
@@ -205,3 +241,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 3.1.10: Perceptron and MLP - Part 10** when ready.
+
+---

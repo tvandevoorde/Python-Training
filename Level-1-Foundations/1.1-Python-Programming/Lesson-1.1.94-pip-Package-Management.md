@@ -1,5 +1,7 @@
 # Lesson 1.1.94: pip & Package Management
 
+> Previous Lesson: [Lesson 1.1.93: Virtual Environments with `venv`](Lesson-1.1.93-Virtual-Environments.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 1.1.93
 
@@ -12,6 +14,13 @@
 3. **Update** and remove packages
 4. **Resolve** dependency issues
 5. **Share** dependencies
+
+---
+
+## Introduction: Why This Matters
+
+pip & Package Management matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -138,4 +147,48 @@ flake8==4.0.0
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: pip & Package Management.
+2. Implement the smallest working version for: pip & Package Management.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.94"
+LESSON_TOPIC = "pip & Package Management"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.95: Poetry for Modern Python](Lesson-1.1.95-Poetry.md)
 

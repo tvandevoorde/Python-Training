@@ -1,5 +1,7 @@
 # Lesson 3.4.16: Vision Project Build - Part 16
 
+> Previous Lesson: [Lesson 3.4.15: Kaggle DL Workflow - Part 15](Lesson-3.4.15-Kaggle-DL-Workflow-Part-15.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 3.4.15 | **Topic**: 3.4 Deep Learning Projects (Vision Project Build)
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement a practical deep learning project workflow step
 - Evaluate quality and identify common failure modes
 - Document and communicate implementation decisions
+
+---
+
+## Introduction: Why This Matters
+
+Vision Project Build - Part 16 matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -83,6 +92,26 @@ print("recall", recall_score(y_true, y_pred))
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Vision Project Build - Part 16.
+2. Implement the smallest working version for: 3.4 Deep Learning Projects (Vision Project Build).
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "3.4.16"
+LESSON_TOPIC = "Vision Project Build - Part 16"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
 
 ## Exercises
 
@@ -205,3 +234,5 @@ def evaluate_binary(y_true, y_pred):
 **Lesson Complete.**
 
 Proceed to **Lesson 3.4.17: NLP Project Build - Part 17** when ready.
+
+---

@@ -1,5 +1,7 @@
 # Lesson 1.2.1: Linear Algebra for ML - Big Picture
 
+> Previous Lesson: [Sublevel Index](CURRICULUM-INDEX.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: LEVEL 1.1 | **Topic**: Linear Algebra Foundations
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Represent data as vectors and matrices
 - Interpret linear transformations visually
 - Use basic NumPy structures for linear algebra
+
+---
+
+## Introduction: Why This Matters
+
+Linear Algebra for ML - Big Picture matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -95,6 +104,27 @@ print(mean_vec)
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. State the mathematical assumption behind Linear Algebra for ML - Big Picture.
+2. Verify with a tiny numeric example first.
+3. Compare analytical and computed results.
+4. Flag where rounding or scale can break intuition.
+
+```python
+from math import isclose
+
+LESSON_ID = "1.2.1"
+LESSON_TOPIC = "Linear Algebra for ML - Big Picture"
+
+def finite_difference_square(x: float, h: float = 1e-5) -> float:
+    return ((x + h) ** 2 - x ** 2) / h
+
+approx = finite_difference_square(3.0)
+exact = 2 * 3.0
+assert isclose(approx, exact, rel_tol=1e-3)
+```
 
 ## Exercises
 
@@ -214,3 +244,4 @@ Proceed to **Lesson 1.2.2** when ready.
 
 
 
+---

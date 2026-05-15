@@ -1,5 +1,7 @@
 # Lesson 1.3.62: Data Exploration Workflow in Notebooks
 
+> Previous Lesson: [Lesson 1.3.61: Reproducible Notebook Practices](Lesson-1.3.61-Reproducible-Notebook-Practices.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.3.61 | **Topic**: Jupyter Notebooks
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Apply this concept to realistic data tasks
 - Debug common mistakes and edge cases
 - Build a small reusable workflow in Python
+
+---
+
+## Introduction: Why This Matters
+
+Data Exploration Workflow in Notebooks matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -90,6 +99,25 @@ print(result)
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Pick one baseline model and one fine-tuning method for Data Exploration Workflow in Notebooks.
+2. Freeze all non-essential parts first (PEFT mindset).
+3. Track train/validation loss each epoch with fixed seeds.
+4. Compare quality gain against compute cost before scaling.
+
+```python
+LESSON_ID = "1.3.62"
+LESSON_TOPIC = "Jupyter Notebooks"
+
+def choose_trainable_layers(method: str) -> list[str]:
+    if method.lower() == "lora":
+        return ["q_proj", "v_proj"]
+    return ["all"]
+
+print(choose_trainable_layers("lora"))
+```
 
 ## Exercises
 
@@ -210,3 +238,5 @@ def grouped_stats(df: pd.DataFrame, by_col: str, value_col: str) -> pd.DataFrame
 
 Proceed to **Lesson 1.3.63: Debugging and Refactoring Notebook Code** when ready.
 ```
+
+---

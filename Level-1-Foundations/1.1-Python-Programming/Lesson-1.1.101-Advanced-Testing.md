@@ -1,5 +1,7 @@
 # Lesson 1.1.101: Advanced Testing Patterns
 
+> Previous Lesson: [Lesson 1.1.100: Test Coverage](Lesson-1.1.100-Test-Coverage.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Advanced  
 **Prerequisites**: Lesson 1.1.100
 
@@ -12,6 +14,13 @@
 3. **Use** parametrization
 4. **Organize** test suites
 5. **Test** edge cases
+
+---
+
+## Introduction: Why This Matters
+
+Advanced Testing Patterns matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -121,4 +130,48 @@ class TestDivide:
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Advanced Testing Patterns.
+2. Implement the smallest working version for: Advanced Testing Patterns.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.101"
+LESSON_TOPIC = "Advanced Testing Patterns"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.102: CAPSTONE PROJECT Testing Best Practices](Lesson-1.1.102-CAPSTONE.md)
 

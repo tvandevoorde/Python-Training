@@ -1,5 +1,7 @@
 # Lesson 1.1.26: Lambda Functions & Anonymous Functions
 
+> Previous Lesson: [Lesson 1.1.25: Return Values & Returning Data](Lesson-1.1.25-Return-Values-and-Returning-Data.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.1.25 (Return Values) | **Topic**: Functions - Lambda Expressions
 
@@ -14,6 +16,13 @@ By the end of this lesson, you will be able to:
 - Apply lambda functions in practical scenarios
 - Write clean, readable lambda expressions
 - Avoid lambda anti-patterns
+
+---
+
+## Introduction: Why This Matters
+
+Lambda Functions & Anonymous Functions matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -490,6 +499,26 @@ print(f"Filtered None: {result}")  # [0, 1, 2, 3, 5]
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Lambda Functions & Anonymous Functions.
+2. Implement the smallest working version for: Functions - Lambda Expressions.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.26"
+LESSON_TOPIC = "Lambda Functions & Anonymous Functions"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
 ## Exercises
 
 ### Difficulty 1: Starter 🟩
@@ -737,3 +766,4 @@ Proceed to **Lesson 1.1.27** when you're ready.
 
 
 
+---

@@ -1,5 +1,7 @@
 # Lesson 1.2.8: Matrix Operations
 
+> Previous Lesson: [Lesson 1.2.7: Matrices - Structure and Notation](Lesson-1.2.7-Matrices-Structure-and-Notation.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 1.2.7 | **Topic**: Linear Algebra Foundations
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Scale and transpose matrices
 - Perform element-wise operations
 - Use NumPy for matrix ops
+
+---
+
+## Introduction: Why This Matters
+
+Matrix Operations matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -86,6 +95,26 @@ print(X_centered)
 ```
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Start from a tiny sample that reflects Linear Algebra Foundations.
+2. Make transformations explicit (no hidden in-place side effects).
+3. Validate schema assumptions after each step.
+4. Save intermediate outputs for debugging reproducibility.
+
+```python
+import pandas as pd
+
+LESSON_ID = "1.2.8"
+LESSON_TOPIC = "Linear Algebra Foundations"
+frame = pd.DataFrame({"value": [10, None, 30]})
+clean = frame.copy()
+clean["value"] = clean["value"].fillna(clean["value"].median())
+
+assert "value" in clean.columns
+assert clean["value"].isna().sum() == 0
+```
 
 ## Exercises
 
@@ -204,3 +233,4 @@ Proceed to **Lesson 1.2.9** when ready.
 
 
 
+---

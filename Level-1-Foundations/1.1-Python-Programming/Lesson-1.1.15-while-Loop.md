@@ -1,5 +1,7 @@
 # Lesson 1.1.14: `while` Loops - Repetition
 
+> Previous Lesson: [Lesson 1.1.14: Ternary Operator](Lesson-1.1.14-Ternary-Operator.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Beginner  
 **Prerequisites**: Lesson 1.1.13 (Comparison Operators) | **Topic**: Loops - Conditional Repetition
 
@@ -13,6 +15,13 @@ By the end of this lesson, you will be able to:
 - Update loop variables to eventually stop the loop
 - Identify and fix infinite loops
 - Apply `while` loops to practical problems
+
+---
+
+## Introduction: Why This Matters
+
+`while` Loops - Repetition matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -398,6 +407,26 @@ while row <= 3:
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: `while` Loops - Repetition.
+2. Implement the smallest working version for: Loops - Conditional Repetition.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.15"
+LESSON_TOPIC = "`while` Loops - Repetition"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
 ## Exercises
 
 ### Difficulty 1: Starter 🟩
@@ -711,3 +740,4 @@ Proceed to **Lesson 1.1.15** when you're ready.
 
 
 
+---

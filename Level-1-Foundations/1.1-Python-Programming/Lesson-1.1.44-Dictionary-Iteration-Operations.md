@@ -1,5 +1,7 @@
 # Lesson 1.1.43: Dictionary Iteration & Operations
 
+> Previous Lesson: [Lesson 1.1.43: Dictionaries Fundamentals](Lesson-1.1.43-Dictionaries-Fundamentals.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.1.41 (Dictionaries Fundamentals)
 
@@ -15,6 +17,13 @@ By the end of this lesson, you will be able to:
 - Process dictionary key-value pairs
 - Sort dictionaries
 - Understand dictionary views
+
+---
+
+## Introduction: Why This Matters
+
+Dictionary Iteration & Operations matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -446,4 +455,35 @@ data = {"name": "Alice", "age": 30}
 
 
 
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Dictionary Iteration & Operations.
+2. Implement the smallest working version for: Dictionary Iteration & Operations.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.44"
+LESSON_TOPIC = "Dictionary Iteration & Operations"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.45: Dictionary Comprehensions](Lesson-1.1.45-Dictionary-Comprehensions.md)
 

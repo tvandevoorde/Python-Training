@@ -1,5 +1,7 @@
 # Lesson 1.2.12: Mini-Project - Vector Library
 
+> Previous Lesson: [Lesson 1.2.11: Linear Systems](Lesson-1.2.11-Linear-Systems.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lessons 1.2.1 - 1.2.11 | **Topic**: Linear Algebra Integration
 
@@ -12,6 +14,13 @@ By the end of this lesson, you will be able to:
 - Implement core vector operations
 - Validate vector shapes and inputs
 - Test your vector functions
+
+---
+
+## Introduction: Why This Matters
+
+Mini-Project - Vector Library matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -52,6 +61,25 @@ Write small tests and try example inputs.
 Use the library to compute cosine similarity.
 
 ---
+
+## Best Practices (Step-by-Step)
+
+1. Define the retrieval objective for Mini-Project - Vector Library (precision vs recall).
+2. Start with a small curated document set and deterministic chunking.
+3. Retrieve top-k candidates, then rerank before generation.
+4. Log source chunks with the final answer for traceability.
+
+```python
+LESSON_ID = "1.2.12"
+LESSON_TOPIC = "Linear Algebra Integration"
+
+def retrieve_top_k(query: str, docs: list[str], k: int = 2) -> list[str]:
+    ranked = sorted(docs, key=lambda d: query.lower() in d.lower(), reverse=True)
+    return ranked[:k]
+
+chunks = ["LLM inference uses KV cache.", "Pandas handles tabular data."]
+print(retrieve_top_k("inference", chunks, k=1))
+```
 
 ## Exercises
 
@@ -176,3 +204,4 @@ Proceed to **Lesson 1.2.13** when ready.
 
 
 
+---

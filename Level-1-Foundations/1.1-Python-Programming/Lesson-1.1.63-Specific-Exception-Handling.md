@@ -1,5 +1,7 @@
 # Lesson 1.1.63: Specific Exception Handling
 
+> Previous Lesson: [Lesson 1.1.62: Exception Basics](Lesson-1.1.62-Exception-Basics.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.1.62 (Exception Basics)
 
@@ -17,6 +19,13 @@ By the end of this lesson, you will be able to:
 6. **Distinguish** between recoverable and fatal exceptions
 7. **Design** functions that fail gracefully with appropriate exception types
 8. **Debug** using exception information
+
+---
+
+## Introduction: Why This Matters
+
+Specific Exception Handling matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -446,4 +455,55 @@ def safe_divide_v2(a, b):
 
 
 
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+
+---
+
+## Best Practices (Step-by-Step)
+
+1. Define expected behavior for: Specific Exception Handling.
+2. Add one happy-path and one edge-case test.
+3. Assert exact output and clear error messages.
+4. Keep test names explicit and focused on one behavior.
+
+```python
+LESSON_ID = "1.1.63"
+LESSON_TOPIC = "Specific Exception Handling"
+
+def parse_positive(value: str) -> int:
+    number = int(value)
+    if number <= 0:
+        raise ValueError("value must be positive")
+    return number
+
+def test_parse_positive_returns_int() -> None:
+    assert parse_positive("5") == 5
+
+def test_parse_positive_rejects_zero() -> None:
+    try:
+        parse_positive("0")
+    except ValueError as exc:
+        assert "positive" in str(exc)
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.64: Multiple Except Blocks](Lesson-1.1.64-Multiple-Except-Blocks.md)
 

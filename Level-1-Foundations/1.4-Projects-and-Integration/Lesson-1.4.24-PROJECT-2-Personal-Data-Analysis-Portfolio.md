@@ -1,5 +1,7 @@
 # Lesson 1.4.24: PROJECT 2 - Personal Data Analysis Portfolio
 
+> Previous Lesson: [Lesson 1.4.23: Mini-Project - Portfolio Artifact Sprint](Lesson-1.4.23-Mini-Project-Portfolio-Artifact-Sprint.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Advanced  
 **Prerequisites**: Lessons 1.4.14 - 1.4.23 | **Topic**: Project 2
 
@@ -55,6 +57,35 @@ This lesson is a major build checkpoint with production-style deliverables.
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: PROJECT 2 - Personal Data Analysis Portfolio.
+2. Implement the smallest working version for: Project 2.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.4.24"
+LESSON_TOPIC = "PROJECT 2 - Personal Data Analysis Portfolio"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.4.25: FINAL EXERCISE PROJECT - Level 1 Integrated Foundations Challenge](Lesson-1.4.25-FINAL-EXERCISE-PROJECT-Level-1-Integrated-Foundations-Challenge.md)
+
 ## Next Lesson Preview
 
 **Lesson 1.4.25: FINAL EXERCISE PROJECT - Level 1 Integrated Foundations Challenge**
@@ -65,3 +96,33 @@ This lesson is a major build checkpoint with production-style deliverables.
 **Lesson Complete.**
 
 Proceed to **Lesson 1.4.25: FINAL EXERCISE PROJECT - Level 1 Integrated Foundations Challenge** when ready.
+
+---
+
+## Learning Objectives
+
+By the end of this lesson, you will be able to:
+- Explain the key idea behind PROJECT 2 - Personal Data Analysis Portfolio
+- Implement a small practical example
+- Identify one common failure mode and fix
+
+---
+
+## Introduction: Why This Matters
+
+PROJECT 2 - Personal Data Analysis Portfolio matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
+
+---
+
+## Core Teaching Content
+
+Focus on one clear concept and connect it to a real workflow scenario.
+
+```python
+def run_example(value: int) -> int:
+    return value * 2
+
+print(run_example(3))
+```
+

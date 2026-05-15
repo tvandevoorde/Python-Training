@@ -1,5 +1,7 @@
 # Lesson 1.1.88: Modules & Imports
 
+> Previous Lesson: [Lesson 1.1.87: MILESTONE TEST OOP Basics](Lesson-1.1.87-MILESTONE-TEST-OOP-Basics.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.1.24 (Function Basics)
 
@@ -17,6 +19,13 @@ By the end of this lesson, you will:
 6. Understand module namespaces and scope
 7. Avoid circular imports
 8. Structure projects with packages
+
+---
+
+## Introduction: Why This Matters
+
+Modules & Imports matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -213,8 +222,32 @@ Create a multi-file calculator application with:
 
 ---
 
-**Next Lesson**: [1.1.89 - Creating Modules](Lesson-1.1.89-Creating-Modules.md)
+## Best Practices (Step-by-Step)
 
+1. Clarify one concrete goal for: Modules & Imports.
+2. Implement the smallest working version for: Modules & Imports.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
 
+```python
+LESSON_ID = "1.1.88"
+LESSON_TOPIC = "Modules & Imports"
 
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
+## Quick Practice
+
+- Exercise: Modify the example to handle one edge case.
+- Quiz: What would break if input validation was removed?
+
+---
+
+**Next Lesson**: [Lesson 1.1.89: Creating Modules](Lesson-1.1.89-Creating-Modules.md)
 

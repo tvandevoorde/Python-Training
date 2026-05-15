@@ -1,5 +1,7 @@
 # Lesson 1.1.24: Scope & Namespaces
 
+> Previous Lesson: [Lesson 1.1.23: Function Parameters & Arguments](Lesson-1.1.23-Function-Parameters-and-Arguments.md)
+
 **Estimated Time**: 8 hours | **Difficulty**: Intermediate  
 **Prerequisites**: Lesson 1.1.23 (Parameters & Arguments) | **Topic**: Functions - Variable Scope
 
@@ -14,6 +16,13 @@ By the end of this lesson, you will be able to:
 - Use `global` and `nonlocal` keywords correctly
 - Debug scope-related issues
 - Follow scope best practices
+
+---
+
+## Introduction: Why This Matters
+
+Scope & Namespaces matters because it solves a recurring engineering problem and creates a reliable foundation for later lessons.
+In the bigger picture, this topic improves quality, speed, and confidence when building end-to-end AI systems.
 
 ---
 
@@ -495,6 +504,26 @@ print(f"Settings: {get_settings()}")
 
 ---
 
+## Best Practices (Step-by-Step)
+
+1. Clarify one concrete goal for: Scope & Namespaces.
+2. Implement the smallest working version for: Functions - Variable Scope.
+3. Handle one invalid-input case explicitly.
+4. Refactor repeated logic into a named function.
+
+```python
+LESSON_ID = "1.1.24"
+LESSON_TOPIC = "Scope & Namespaces"
+
+def normalize_name(value: str) -> str:
+    text = value.strip()
+    if not text:
+        raise ValueError("name must not be empty")
+    return text.title()
+
+print(normalize_name("  python learner "))
+```
+
 ## Exercises
 
 ### Difficulty 1: Starter 🟩
@@ -833,3 +862,4 @@ Proceed to **Lesson 1.1.25** when you're ready.
 
 
 
+---
