@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [string]$SourceRoot = (Get-Location).Path,
-    [string]$OutputRoot = (Join-Path (Get-Location).Path "site")
+    [string]$OutputRoot = (Join-Path (Get-Location).Path "docs")
 )
 
 Set-StrictMode -Version Latest
